@@ -1,0 +1,8 @@
+@keyframes fade-in-up-on-view {
+  from { opacity: 0; transform: translateY(32px); }
+  to { opacity: 1; transform: none; }
+}
+.animate-fade-in-up-on-view {
+  opacity: 1 !important;
+  animation: fade-in-up-on-view 0.8s cubic-bezier(.4,0,.2,1) both;
+} 

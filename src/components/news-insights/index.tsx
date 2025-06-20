@@ -18,8 +18,8 @@ const NewsInsights = () => {
   ];
 
   return (
-    <section className="bg-off-white py-24">
-      <div className="container mx-auto px-16">
+    <section className="bg-off-white py-24 px-4 md:px-8">
+      <div className="container mx-auto">
         {/* Header */}
         <h2 className="text-sm uppercase tracking-wider font-medium text-left mb-4 text-accent-blue">
           News & Insights
@@ -60,25 +60,9 @@ const NewsInsights = () => {
 
         {/* View All Link */}
         <div className="mt-12 text-center">
-          <a 
-            href="/news" 
-            className="inline-flex items-center text-accent-blue hover:underline"
-          >
-            View All News & Insights
-            <svg 
-              className="ml-2 w-4 h-4" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-            >
-              <path 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth={2} 
-                d="M9 5l7 7-7 7" 
-              />
-            </svg>
-          </a>
+          <button className="border border-accent-blue text-accent-blue hover:bg-accent-blue hover:text-off-white px-6 py-2 transition-colors">
+            <a href="/news">View More</a>
+          </button>
         </div>
       </div>
     </section>

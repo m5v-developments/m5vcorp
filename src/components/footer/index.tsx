@@ -29,9 +29,9 @@ export function Footer() {
       { label: 'Project Updates', href: '#' },
     ],
     SOCIALS: [
-      { label: 'Instagram', href: '#'},
-      { label: 'Youtube', href: '#'},
-      { label: 'LinkedIn', href: '#'},
+      { label: 'Instagram', href: 'https://www.instagram.com/m5v_developments'},
+      { label: 'Youtube', href: 'https://www.youtube.com/m5v_developments'},
+      { label: 'LinkedIn', href: 'https://www.linkedin.com/company/m5v-developments/'},
     ],
   };
 
@@ -42,8 +42,8 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-accent-blue text-off-white py-12">
-      <div className="container mx-auto px-16">
+    <footer className="bg-accent-blue text-off-white py-12 px-4 md:px-8">
+      <div className="container mx-auto">
         {/* Main footer content */}
         <div className="lg:grid lg:grid-cols-5 gap-8">
           {/* Logo column */}

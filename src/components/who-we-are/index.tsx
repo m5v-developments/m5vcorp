@@ -1,3 +1,9 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import { useIntersectionObserver, usePrefersReducedMotion } from '@/lib/hooks';
+import AnimatedCounter from '@/components/AnimatedCounter';
+
 const WhoWeAre = () => {
   const metrics = [
     {
@@ -20,9 +26,25 @@ const WhoWeAre = () => {
     }
   ];
 
+  // Use intersection observer to detect when section comes into view
+  const [sectionRef, isSectionVisible] = useIntersectionObserver<HTMLDivElement>();
+  
+  // Check if user prefers reduced motion
+  const prefersReducedMotion = usePrefersReducedMotion();
+  
+  // State to track if animation should start
+  const [shouldStartAnimation, setShouldStartAnimation] = useState(false);
+  
+  // Start animation when section becomes visible (but only once)
+  useEffect(() => {
+    if (isSectionVisible && !shouldStartAnimation && !prefersReducedMotion) {
+      setShouldStartAnimation(true);
+    }
+  }, [isSectionVisible, shouldStartAnimation, prefersReducedMotion]);
+
   return (
-    <section className="bg-black-primary text-off-white py-24">
-      <div className="container mx-auto px-16">
+    <section className="bg-black-primary text-off-white py-24 px-4 md:px-8">
+      <div className="container mx-auto">
         {/* Intro text */}
         <div className="max-w-4xl mb-20">
           <h2 className="text-sm uppercase tracking-wider font-medium mb-8">Who We Are</h2>
@@ -32,11 +54,24 @@ const WhoWeAre = () => {
         </div>
 
         {/* Metrics grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div 
+          ref={sectionRef}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"
+        >
           {metrics.map((metric, index) => (
             <div key={index} className="text-center">
               <div className="text-accent-blue text-5xl font-bold mb-4">
-                {metric.value}
+                {prefersReducedMotion ? (
+                  // Show static value if user prefers reduced motion
+                  <span>{metric.value}</span>
+                ) : (
+                  // Show animated counter
+                  <AnimatedCounter 
+                    value={metric.value}
+                    shouldAnimate={shouldStartAnimation}
+                    duration={2500}
+                  />
+                )}
               </div>
               <p className="text-body mb-2">
                 {metric.label}

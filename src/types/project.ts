@@ -1,11 +1,13 @@
-export interface ProjectStats {
-  location: string;
-  units: string;
-  beds: string;
-  exitStrategy: string;
-  status: string;
-  assetClass: string;
-  subType: string;
+export interface ProjectStatItem {
+  label: string;
+  value: string;
+}
+
+export interface ProjectImages {
+  hero: string;
+  spot: string;
+  banner: string;
+  gallery: string[];
 }
 
 export interface Project {
@@ -14,7 +16,7 @@ export interface Project {
   assetClass: string;
   subType: string;
   description: string;
-  stats: ProjectStats;
+  stats: ProjectStatItem[];
   longDescription: string;
-  images: string[];
+  images: ProjectImages;
 } 

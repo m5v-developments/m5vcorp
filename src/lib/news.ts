@@ -27,7 +27,7 @@ During his career, Mr. Viswanathan has worked for some of the largest Canadian r
 Our vision was to create a community that combined the best of urban living with the comfort of suburban life. The stacked townhome design allowed us to maximize land use while providing residents with private outdoor spaces and modern amenities.
 
 The project's success has demonstrated that innovative housing solutions can thrive in secondary markets. By challenging conventional wisdom and focusing on quality design, we've created a blueprint for future developments in the region.`,
-    image: '/images/m5v_portfolio/niagara-phase-1.png',
+    image: '/images/m5v_portfolio/the-niagara-phase-1/drone.webp',
     category: 'Case Study'
   },
   {
@@ -41,7 +41,7 @@ The project's success has demonstrated that innovative housing solutions can thr
 Our approach combined deep market understanding with innovative solutions to address local concerns. We worked closely with community stakeholders to ensure the development aligned with the region's character while meeting modern living standards.
 
 The project's success demonstrates how persistence, expertise, and community engagement can transform challenging situations into opportunities for growth and development.`,
-    image: '/images/m5v_portfolio/the-muskoka.jpg',
+    image: '/images/m5v_portfolio/the-muskoka/muskoka_severn.webp',
     category: 'Case Study'
   },
   {

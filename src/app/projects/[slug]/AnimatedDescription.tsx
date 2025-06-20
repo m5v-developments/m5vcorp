@@ -31,7 +31,7 @@ export default function AnimatedDescription({ description }: AnimatedDescription
   }, []);
 
   return (
-    <div ref={descriptionRef} className="prose max-w-none mt-32 mb-32 px-[24rem] opacity-0">
+    <div ref={descriptionRef} className="prose max-w-none mt-48 mb-48 px-4 sm:px-8 md:px-24 opacity-0">
       <p className="text-2xl sm:text-3xl text-gray-700">{description}</p>
     </div>
   );

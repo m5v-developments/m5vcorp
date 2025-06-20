@@ -3,28 +3,28 @@ const PlatformCards = () => {
     {
       title: 'Freehold & Stacked Townhomes',
       description: "Delivering attainable, thoughtfully designed ground-oriented homes that serve growing families and first-time buyers in Ontario's emerging markets.",
-      image: '/images/townhomes.jpg'
+      image: '/images/m5v_portfolio/the-niagara-phase-1/drone.webp'
     },
     {
       title: 'Mid-Rise & High-Rise Rentals',
       description: 'Building purpose-built rental communities that support long-term living with modern amenities and walkable, transit-connected locations.',
-      image: '/images/high-rise.jpg'
+      image: '/images/m5v_portfolio/sundial-phase2/sundial-phase2-render.webp'
     },
     {
       title: 'Senior Independent Living',
       description: 'Developing senior-focused residences that combine autonomy, comfort, and community for an aging population seeking accessible housing options.',
-      image: '/images/senior-living.jpg'
+      image: '/images/m5v_portfolio/sundial-lakeview-retirement/sundial-lakeview-close-up.webp'
     },
     {
-      title: 'Condominium Communities',
+      title: 'Single Family Homes',
       description: 'Creating vibrant, efficient vertical living spaces that enhance urban cores and provide long-term value for both residents and investors.',
-      image: '/images/condominium-communities.jpg'
+      image: '/images/m5v_portfolio/the-muskoka/muskoka_siteview.webp'
     }
   ];
 
   return (
-    <section className="bg-off-white py-24">
-      <div className="container mx-auto px-16">
+    <section className="bg-off-white py-24 px-4 md:px-8">
+      <div className="container mx-auto">
         <h2 className="text-sm uppercase tracking-wider font-medium text-left mb-4 text-primary-black">
           What We Do
         </h2>
@@ -50,7 +50,7 @@ const PlatformCards = () => {
               </div>
 
               {/* Content */}
-              <div className="py-6">
+              <div className="py-4 px-6">
                 <h3 className="text-xl font-medium mb-3">
                   <span className="text-accent-blue">{platform.title}</span>
                 </h3>

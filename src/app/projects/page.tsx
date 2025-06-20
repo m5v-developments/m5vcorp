@@ -26,7 +26,7 @@ const projects: Project[] = [
     type: 'Development',
     class: 'Townhomes',
     description: "Bold rooftop townhomes bringing modern design to Niagara's green heart.",
-    image: '/images/m5v_portfolio/Le_Falls.png',
+    image: '/images/m5v_portfolio/le-falls/le_falls_aerial.webp',
   },
   {
     name: 'NIAGARA ON THE BEACH',
@@ -37,7 +37,7 @@ const projects: Project[] = [
     type: 'Development',
     class: 'Townhomes',
     description: "Bold rooftop townhomes bringing modern design to Niagara's green heart.",
-    image: '/images/m5v_portfolio/niagara-on-the-beach.png',
+    image: '/images/m5v_portfolio/niagara-on-the-beach/notb-daytime-3.webp',
   },
   {
     name: 'SUNDIAL RETIREMENT',
@@ -48,7 +48,7 @@ const projects: Project[] = [
     type: 'Operating',
     class: 'Retirement Home',
     description: 'Purpose-built retirement living focused on care, comfort, and community in Orillia.',
-    image: '/images/m5v_portfolio/sundial-retirement.png',
+    image: '/images/m5v_portfolio/sundial-lakeview-retirement/sundial-lakeview-close-up.webp',
   },
   {
     name: 'THE NIAGARA PHASE 1',
@@ -59,7 +59,7 @@ const projects: Project[] = [
     type: 'Development',
     class: 'Stacked Townhomes',
     description: 'The first of our stacked townhome series that redefined urban density in Niagara Falls.',
-    image: '/images/m5v_portfolio/niagara-phase-1.png',
+    image: '/images/m5v_portfolio/the-niagara-phase-1/drone.webp',
   },
   {
     name: 'THE NIAGARA PHASE 2',
@@ -70,7 +70,7 @@ const projects: Project[] = [
     type: 'Development',
     class: 'Stacked Townhomes',
     description: 'Expanded living through design, the second release of our sought-after Niagara townhomes.',
-    image: '/images/m5v_portfolio/niagara-phase-2.png',
+    image: '/images/m5v_portfolio/the-niagara-phase-2/niagara2-render.webp',
   },
   {
     name: 'THE MUSKOKA',
@@ -81,7 +81,7 @@ const projects: Project[] = [
     type: 'Development',
     class: 'Detached',
     description: 'Modern, Airbnb-friendly cottages crafted for second-home living in Muskoka.',
-    image: '/images/m5v_portfolio/the-muskoka.jpg',
+    image: '/images/m5v_portfolio/the-muskoka/muskoka_severn.webp',
   },
 ];
 
@@ -120,7 +120,7 @@ const Projects = (): JSX.Element => {
   return (
     <div className="bg-off-white min-h-screen text-black-primary">
       {/* Hero Section */}
-      <div className="w-full relative pt-56 pb-16 px-8 text-off-white" style={{ minHeight: '340px' }}>
+      <div className="w-full relative pt-56 pb-24 px-4 md:px-8 text-off-white h-[60vh] flex items-end">
         <Image
           src="/images/niagara-falls.png"
           alt="Niagara Falls Hero"
@@ -129,15 +129,16 @@ const Projects = (): JSX.Element => {
           priority
         />
         <div className="absolute inset-0 bg-accent-blue/80 z-10" />
-        <div className="max-w-5xl mx-auto relative z-20">
-          <p className="uppercase font-semibold tracking-widest text-sm mb-2">Projects</p>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-2">Where Vision Meets Opportunity,</h1>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-2">See Our Projects in Action.</h1>
+        <div className="max-w-6xl mx-auto w-full relative z-20">
+          <div>
+            <p className="uppercase font-semibold tracking-widest text-sm mb-2">Projects</p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-2">Where Vision Meets Opportunity. See Our Projects in Action.</h1>
+          </div>
         </div>
       </div>
 
       {/* --- Search & Filters Row --- */}
-      <div className="max-w-5xl mx-auto px-8 border-b">
+      <div className="max-w-6xl mx-auto px-4 md:px-8 border-b">
         <ProjectFilters
           count={filteredProjects.length}
           locations={selectedCities}
@@ -157,18 +158,19 @@ const Projects = (): JSX.Element => {
       </div>
 
       {/* --- Projects List --- */}
-      <div className="max-w-5xl mx-auto px-8 py-12 space-y-12">
+      <div className="max-w-6xl mx-auto px-4 md:px-8 py-12 space-y-12">
         {filteredProjects.map((project) => (
           <div key={project.slug} className="flex flex-col md:flex-row gap-6 border-b pb-8 last:border-b-0">
             {/* Project Image */}
-            <div className="w-full md:w-64 h-48 bg-gray-200 relative flex-shrink-0">
+            <div className="w-full md:w-64 h-48 bg-gray-200 relative flex-shrink-0 overflow-hidden">
               <Image
                 src={project.image}
                 alt={project.name}
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-300"
                 sizes="(max-width: 768px) 100vw, 256px"
                 priority
+                id={`image-${project.slug}`}
               />
             </div>
             {/* Project Info */}
@@ -185,7 +187,21 @@ const Projects = (): JSX.Element => {
               </div>
               <div>
                 <Link href={`/projects/${project.slug}`}>
-                  <button className="mt-2 px-6 py-2 bg-black text-white font-normal rounded-sm flex items-center gap-2 hover:bg-gray-900 transition">
+                  <button 
+                    className="mt-2 px-6 py-2 bg-black text-white font-normal rounded-sm flex items-center gap-2 hover:bg-accent-blue hover:text-off-white transition-colors duration-300"
+                    onMouseEnter={() => {
+                      const image = document.getElementById(`image-${project.slug}`);
+                      if (image) {
+                        image.style.transform = 'scale(1.05)';
+                      }
+                    }}
+                    onMouseLeave={() => {
+                      const image = document.getElementById(`image-${project.slug}`);
+                      if (image) {
+                        image.style.transform = 'scale(1)';
+                      }
+                    }}
+                  >
                     Learn More
                     <span className="inline-block ml-1">›</span>
                   </button>

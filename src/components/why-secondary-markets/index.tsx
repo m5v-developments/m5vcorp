@@ -18,8 +18,8 @@ const WhySecondaryMarkets = () => {
   ];
 
   return (
-    <section id="why-secondary-markets" className="bg-black-primary py-32">
-      <div className="container mx-auto px-6 max-w-6xl">
+    <section id="why-secondary-markets" className="bg-black-primary py-32 px-4 md:px-8">
+      <div className="container mx-auto">
         {/* Headers */}
         <div className="mb-20">
           <h3 className="text-sm uppercase tracking-wider font-medium mb-6 text-accent-blue">

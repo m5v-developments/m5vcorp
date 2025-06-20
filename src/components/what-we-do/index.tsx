@@ -8,7 +8,7 @@ const PlatformCards = () => {
     {
       title: 'Mid-Rise & High-Rise Rentals',
       description: 'Building purpose-built rental communities that support long-term living with modern amenities and walkable, transit-connected locations.',
-      image: '/images/platform/rentals.jpg'
+      image: '/images/m5v_portfolio/sundial-phase2/sundial-phase2-render.webp'
     },
     {
       title: 'Senior Independent Living',
@@ -48,7 +48,7 @@ const PlatformCards = () => {
               </div>
 
               {/* Content */}
-              <div className="p-6">
+              <div className="p-6 py-8">
                 <h3 className="text-xl font-medium mb-3">{platform.title}</h3>
                 <p className="text-gray-600 mb-4">{platform.description}</p>
                 <button className="text-accent-blue hover:underline">

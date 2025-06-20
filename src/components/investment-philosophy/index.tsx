@@ -4,14 +4,14 @@ import { useState } from 'react';
 import Image from 'next/image';
 
 const InvestmentPhilosophy = () => {
-  const [activePoint, setActivePoint] = useState<number | null>(null);
+  const [activePoint, setActivePoint] = useState<number | null>(0);
 
   const points = [
     {
       number: '1',
       title: 'Construction Excellence',
       description: 'Clustering projects, using pre-fab systems, and sourcing globally lets us reduce costs and accelerate build times.',
-      image: '/images/construction-excellence.jpg'
+      image: '/images/m5v_portfolio/the-niagara-phase-1/sherard-construction.webp'
     },
     {
       number: '2',
@@ -34,16 +34,16 @@ const InvestmentPhilosophy = () => {
   ];
 
   return (
-    <section className="bg-off-white py-24">
-      <div className="container mx-auto px-6 max-w-7xl">
-        <div className="flex gap-12">
+    <section className="bg-off-white py-24 px-4 md:px-8">
+      <div className="container mx-auto">
+        <div className="flex flex-col md:flex-row gap-8">
           {/* Left side - Text Content */}
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2">
             <h2 className="text-sm uppercase tracking-wider font-medium mb-6 text-accent-blue">
               How We Do It
             </h2>
-            <p className="text-h3 text-primary-black mb-16">
-              Our integrated model maximizes value at every stage of development:
+            <p className="text-[2.75rem] leading-tight font-medium text-primary-black mb-16">
+              Our integrated model maximizes value at every stage of development.
             </p>
 
             {/* Points List */}
@@ -51,9 +51,7 @@ const InvestmentPhilosophy = () => {
               {points.map((point, index) => (
                 <div 
                   key={index}
-                  className="group cursor-pointer"
-                  onMouseEnter={() => setActivePoint(index)}
-                  onMouseLeave={() => setActivePoint(null)}
+                  className="group"
                 >
                   <div className="flex gap-6">
                     {/* Number */}
@@ -61,18 +59,47 @@ const InvestmentPhilosophy = () => {
                       {point.number}
                     </div>
                     {/* Content */}
-                    <div>
-                      <h3 className="text-xl font-medium text-primary-black mb-3 flex items-center justify-between">
-                        {point.title}
-                        <svg className="w-4 h-4 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </h3>
-                      <p className={`text-black/80 leading-relaxed transition-all duration-300 ${
-                        activePoint === index ? 'opacity-100 max-h-40' : 'opacity-0 max-h-0 overflow-hidden'
-                      }`}>
-                        {point.description}
-                      </p>
+                    <div className="flex-1">
+                      <button
+                        className="w-full text-left"
+                        aria-expanded={activePoint === index}
+                        onClick={() => setActivePoint(activePoint === index ? null : index)}
+                      >
+                        <h3 className="text-xl font-medium text-primary-black mb-3 flex items-center justify-between">
+                          {point.title}
+                          <svg 
+                            className={`w-4 h-4 text-accent-blue transition-transform duration-300 ${
+                              activePoint === index ? 'rotate-90' : ''
+                            }`} 
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24"
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </h3>
+                      </button>
+                      <div 
+                        className={`transition-[max-height] duration-300 overflow-hidden ${
+                          activePoint === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                        }`}
+                      >
+                        <p className="text-black/80 leading-relaxed mb-4">
+                          {point.description}
+                        </p>
+                        {/* Mobile Image */}
+                        <div className="mt-4 block md:hidden">
+                          <div className="aspect-video relative">
+                            <Image
+                              src={point.image}
+                              alt={point.title}
+                              fill
+                              className="object-cover"
+                              sizes="100vw"
+                            />
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   {index < points.length - 1 && <hr className="border-t border-black my-6" />}
@@ -81,8 +108,8 @@ const InvestmentPhilosophy = () => {
             </div>
           </div>
 
-          {/* Right side - Images */}
-          <div className="w-1/2 relative">
+          {/* Right side - Desktop Images */}
+          <div className="hidden md:block w-1/2 relative">
             {points.map((point, index) => (
               <div 
                 key={index}
@@ -95,8 +122,9 @@ const InvestmentPhilosophy = () => {
                     src={point.image}
                     alt={point.title}
                     fill
-                    className="object-cover rounded-lg"
+                    className="object-cover"
                     priority={index === 0}
+                    sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw"
                   />
                 </div>
               </div>

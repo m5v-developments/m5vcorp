@@ -6,7 +6,7 @@ const Founders = () => {
       firstName: 'Sherard',
       lastName: 'McQueen',
       position: 'Sales & Marketing',
-      image: '/images/team/Sherard.png',
+      image: '/images/team/sherard-2.webp',
       id: 'sherard'
     },
     {
@@ -26,8 +26,8 @@ const Founders = () => {
   ];
 
   return (
-    <section className="bg-accent-blue py-24">
-      <div className="container mx-auto px-16">
+    <section className="bg-accent-blue py-24 px-4 md:px-8">
+      <div className="container mx-auto">
         <h2 className="text-h2 mb-8 text-off-white font-medium">Our Partners</h2>
         
         {/* Founders Grid */}

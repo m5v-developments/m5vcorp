@@ -60,7 +60,7 @@ export default function CompanyPage(): JSX.Element {
         <div className="absolute inset-0 bg-accent-blue/80 z-10" />
         <div className="max-w-6xl mx-auto w-full relative z-20">
           <div>
-            <p className="uppercase font-semibold tracking-widest text-sm mb-2">Company</p>
+            <p className="text-sm uppercase tracking-widest font-medium mb-2 text-off-white">Company</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-2">Value and Design, Finally on the Same Page.</h1>
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function CompanyPage(): JSX.Element {
         <div className="max-w-6xl mx-auto flex flex-col">
           {/* Text Block */}
           <div className="w-full mb-8">
-            <div className="uppercase font-semibold tracking-widest text-sm mb-2 text-accent-blue">Our Story</div>
+            <div className="text-sm uppercase tracking-wider font-medium mb-2 text-accent-blue">Our Story</div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-medium mb-4">From Brokers to Builders</h2>
             <div className="space-y-4 text-lg leading-relaxed text-black">
               <p>
@@ -106,7 +106,7 @@ export default function CompanyPage(): JSX.Element {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Text Column */}
           <div>
-            <div className="uppercase text-sm font-semibold tracking-widest text-accent-blue mb-2 font-calibre">
+            <div className="text-sm uppercase tracking-widest font-medium mb-2 text-accent-blue font-calibre">
               OUR MISSION
             </div>
             <h2 id="mission-heading" className="text-3xl sm:text-4xl md:text-5xl font-medium mb-4 text-black-primary font-calibre">
@@ -138,7 +138,7 @@ export default function CompanyPage(): JSX.Element {
       {/* Our Principles */}
       <section className="py-16 bg-black-primary px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
-          <p className="uppercase font-semibold tracking-widest text-sm text-accent-blue mb-2">
+          <p className="text-sm uppercase tracking-widest font-medium mb-2 text-accent-blue">
             Our Principles
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-medium text-off-white mb-8">
@@ -163,7 +163,7 @@ export default function CompanyPage(): JSX.Element {
       {/* Case Studies */}
       <section className="py-16 px-4 md:px-8 bg-off-white">
         <div className="max-w-6xl mx-auto">
-          <p className="uppercase font-semibold tracking-widest text-sm mb-2">Case Studies</p>
+          <p className="text-sm uppercase tracking-widest font-medium mb-2 text-accent-blue">Case Studies</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-medium text-black-primary mb-8">
             Our Projects Are Built for Success. See It Yourself.
           </h2>
@@ -182,7 +182,7 @@ export default function CompanyPage(): JSX.Element {
       {/* Partners */}
       <section className="py-16 px-4 md:px-8 bg-off-white">
         <div className="max-w-6xl mx-auto">
-          <p className="uppercase font-semibold tracking-widest text-sm text-accent-blue mb-2">
+          <p className="text-sm uppercase tracking-widest font-medium mb-2 text-accent-blue">
             Our Partners
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-medium text-black-primary mb-8">
@@ -256,7 +256,7 @@ export default function CompanyPage(): JSX.Element {
       <section className="py-16 px-4 md:px-8 bg-black-primary text-off-white text-center">
         <div className="max-w-6xl mx-auto">
           <p 
-            className="uppercase font-semibold tracking-widest text-sm mb-8">
+            className="uppercase font-medium tracking-widest text-sm mb-8">
             Invest in Vision, Build Lasting Value.
           </p>
           <h2 className="text-3xl sm:text-4xl font-display font-medium mb-8">

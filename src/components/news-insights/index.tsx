@@ -1,21 +1,11 @@
+import { newsItems } from '@/lib/news';
+import Link from 'next/link';
+
 const NewsInsights = () => {
-  const newsItems = [
-    {
-      date: '2024-04-24',
-      title: 'M5V Asset Management Completes New Strategic Investment in European Logistics Platform',
-      category: 'Press Release'
-    },
-    {
-      date: '2024-04-20',
-      title: 'M5V Asset Management Announces Launch of Core-Plus Infrastructure Fund',
-      category: 'News'
-    },
-    {
-      date: '2024-04-15',
-      title: 'M5V Asset Management Provides Record Investment Returns to Investors in Q1',
-      category: 'Insights'
-    }
-  ];
+  // Get the 3 most recent articles
+  const recentNews = newsItems
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 3);
 
   return (
     <section className="bg-off-white py-24 px-4 md:px-8">
@@ -30,39 +20,44 @@ const NewsInsights = () => {
 
         {/* News Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {newsItems.map((item, index) => (
-            <article 
-              key={index}
-              className="group cursor-pointer"
+          {recentNews.map((item) => (
+            <Link 
+              key={item.id}
+              href={`/news/${item.id}`}
+              className="group cursor-pointer block"
             >
-              {/* Date and Category */}
-              <div className="mb-4">
-                <span className="text-sm text-gray-500">
-                  {new Date(item.date).toLocaleDateString('en-US', {
-                    month: 'long',
-                    day: 'numeric',
-                    year: 'numeric'
-                  })}
-                </span>
-                <span className="mx-2 text-gray-300">|</span>
-                <span className="text-sm text-accent-blue">
-                  {item.category}
-                </span>
-              </div>
+              <article>
+                {/* Date and Category */}
+                <div className="mb-4">
+                  <span className="text-sm text-gray-500">
+                    {new Date(item.date).toLocaleDateString('en-US', {
+                      month: 'long',
+                      day: 'numeric',
+                      year: 'numeric'
+                    })}
+                  </span>
+                  <span className="mx-2 text-gray-300">|</span>
+                  <span className="text-sm text-accent-blue">
+                    {item.category}
+                  </span>
+                </div>
 
-              {/* Title */}
-              <h3 className="text-xl font-medium text-black-primary group-hover:text-accent-blue transition-colors">
-                {item.title}
-              </h3>
-            </article>
+                {/* Title */}
+                <h3 className="text-xl font-medium text-black-primary group-hover:text-accent-blue transition-colors">
+                  {item.headline}
+                </h3>
+              </article>
+            </Link>
           ))}
         </div>
 
         {/* View All Link */}
         <div className="mt-12 text-center">
-          <button className="border border-accent-blue text-accent-blue hover:bg-accent-blue hover:text-off-white px-6 py-2 transition-colors">
-            <a href="/news">View More</a>
-          </button>
+          <Link href="/news">
+            <button className="border border-accent-blue text-accent-blue hover:bg-accent-blue hover:text-off-white px-6 py-2 transition-colors">
+              View More
+            </button>
+          </Link>
         </div>
       </div>
     </section>

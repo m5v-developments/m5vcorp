@@ -17,16 +17,14 @@ type NavItem = BaseNavItem | SocialNavItem;
 export function Footer() {
   const primaryNavItems: Record<string, NavItem[]> = {
     COMPANY: [
-      { label: 'About Us', href: '#' },
-      { label: 'Leadership', href: '#' },
+      { label: 'About Us', href: '/company' },
+      { label: 'Team', href: '/team' },
     ],
     PROJECTS: [
-      { label: 'All Projects', href: '#' },
-      { label: 'Case Studies', href: '#' },
+      { label: 'All Projects', href: '/projects' },
     ],
     INSIGHTS: [
-      { label: 'News', href: '#' },
-      { label: 'Project Updates', href: '#' },
+      { label: 'News', href: '/news' },
     ],
     SOCIALS: [
       { label: 'Instagram', href: 'https://www.instagram.com/m5v_developments'},
@@ -36,9 +34,8 @@ export function Footer() {
   };
 
   const secondaryNavItems: BaseNavItem[] = [
-    { label: 'Careers', href: '#' },
-    { label: 'Contact', href: '#' },
-    { label: 'Privacy Policy', href: '#' },
+    { label: 'Careers', href: '/careers' },
+    { label: 'Contact Us', href: '/contact' },
   ];
 
   return (

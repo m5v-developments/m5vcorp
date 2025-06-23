@@ -17,6 +17,14 @@ export const metadata: Metadata = {
   keywords: "Real Estate, Investment, Development, M5V Corp, Property",
   authors: [{ name: "M5V Corp" }],
   robots: "index, follow",
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/images/favicon/logo-favicon-32bit.ico', sizes: '32x32', type: 'image/x-icon' },
+    ],
+    shortcut: '/images/favicon/logo-favicon-32bit.ico',
+    apple: '/logo-favicon-180bit.png',
+  },
 };
 
 export default function RootLayout({

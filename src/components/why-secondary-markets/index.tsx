@@ -22,10 +22,10 @@ const WhySecondaryMarkets = () => {
       <div className="container mx-auto">
         {/* Headers */}
         <div className="mb-20">
-          <h3 className="text-sm uppercase tracking-wider font-medium mb-6 text-accent-blue">
+          <h3 className="text-sm uppercase tracking-widest font-medium mb-2 text-accent-blue">
             Why Secondary Markets
           </h3>
-          <h2 className="text-[2.75rem] leading-tight font-medium  text-off-white">
+          <h2 className="text-h2 leading-tight font-medium text-off-white">
             We See Opportunity Outside Big-City Cores
           </h2>
         </div>

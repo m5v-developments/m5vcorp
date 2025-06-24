@@ -21,6 +21,10 @@ async function getProjectData(slug: string) {
 export default async function ProjectPage({ params }: { params: { slug: string } }) {
   const project = await getProjectData(params.slug)
 
+  // Filter stats to only show the specified ones
+  const allowedStats = ['Location', 'Units', 'Status', 'Asset Class', 'Sub Type'];
+  const filteredStats = project.stats.filter(stat => allowedStats.includes(stat.label));
+
   // Breadcrumbs JSON-LD
   const breadcrumbs = {
     "@context": "https://schema.org",
@@ -90,7 +94,7 @@ export default async function ProjectPage({ params }: { params: { slug: string }
               </div>
               {/* Stats Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {project.stats.map((item, idx) => (
+                {filteredStats.map((item, idx) => (
                   <div key={idx} className="bg-off-white p-2 hover:shadow-lg transition-shadow">
                     <p className="text-sm text-gray-500 capitalize mb-1">{item.label}</p>
                     <p className="text-xl text-black-accent font-medium">{item.value}</p>

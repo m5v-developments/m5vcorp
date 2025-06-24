@@ -24,10 +24,10 @@ export default function NewsCard({ item }: NewsCardProps) {
           )}
         </div>
         <div className="flex-1">
-          <p className="text-sm font-semibold tracking-wider text-accent-blue uppercase mb-2">
+          <p className="text-sm font-medium tracking-widest text-accent-blue uppercase mb-2">
             {item.category}
           </p>
-          <h3 className="text-lg md:text-xl font-semibold text-accent-blue group-hover:underline">
+          <h3 className="text-lg md:text-xl font-medium leading-tight text-accent-blue group-hover:underline">
             {item.headline}
           </h3>
           <div className="mt-2 text-sm text-gray-600">

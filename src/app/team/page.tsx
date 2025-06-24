@@ -24,7 +24,7 @@ export default function TeamPage() {
   const teamMembers: TeamMember[] = [
     { 
       name: 'Sherard McQueen', 
-      position: 'Co-Founder | Sales & Marketing', 
+      position: 'Co-Founder, Sales & Marketing', 
       image: '/images/team/sherard-2.webp',
       bio: `Sherard McQueen brings over 15 years of experience in real estate development and sales, having successfully closed over $2B in transactions and managed 75+ property acquisitions. His expertise in market analysis and strategic planning has been instrumental in M5V's growth and success.
 
@@ -54,7 +54,7 @@ As CFO, Rajeev oversees financial planning, risk management, and operational str
     },
     { 
       name: 'Linda Ford', 
-      position: 'Director of Entitlement', 
+      position: 'Director, Entitlements', 
       image: '/images/team/linda.webp',
       bio: `Linda Ford specializes in navigating complex entitlement processes and regulatory compliance. With over 15 years of experience in land use planning and development approvals, she ensures our projects meet all regulatory requirements while maximizing their potential.
 
@@ -64,7 +64,7 @@ As Director of Entitlement, Linda works closely with municipalities and stakehol
     },
     { 
       name: 'Sophia Bailey', 
-      position: 'Director of Sales', 
+      position: 'Director, Sales', 
       image: '/images/team/sophie.webp',
       bio: `Sophia Bailey is a dynamic sales leader with a proven track record of building strong client relationships and driving revenue growth. Her customer-centric approach and market expertise have been key to M5V's sales success.
 
@@ -86,8 +86,8 @@ Committed to operational excellence, Leo has implemented lean management program
     },
     { 
       name: 'Reza Farahdel', 
-      position: 'Controller (CPA)', 
-      image: '/images/team/reza.png',
+      position: 'Controller', 
+      image: '/images/team/reza.webp',
       bio: `Reza Farahdel is a Certified Public Accountant with extensive experience in financial management and reporting. His expertise in accounting principles and financial analysis helps ensure M5V's financial operations run smoothly and efficiently.
 
 As Controller, Reza manages all aspects of financial reporting, budgeting, and internal controls, providing valuable insights to support strategic decision-making and business growth.`,
@@ -106,7 +106,7 @@ Yogesh brings hands-on expertise in advanced construction methods like ICF walls
     },
     { 
       name: 'Martina Cabrera', 
-      position: 'Marketing Manager', 
+      position: 'Director, Marketing', 
       image: '/images/team/martina.webp',
       bio: `Martina Cabrera is a dynamic Marketing Manager with over 12 years of experience in social media and digital marketing. What began as a creative curiosity has blossomed into a profound passion for building vibrant communities, crafting effective strategies, and driving impactful results that enable brands to truly shine in the digital landscape.
 
@@ -126,7 +126,7 @@ Currently on the path to earning his CPA designation, Alex is driven by the oppo
     },
     { 
       name: 'Stephen Lawrence', 
-      position: 'Construction Manager', 
+      position: 'Site Supervisor (Niagara)', 
       image: '/images/team/stephen.webp',
       bio: `Stephen Lawrence is a highly skilled Construction Manager and a Licensed Professional Engineer (PEO), holding a Bachelor's in Mechanical Engineering from McMaster University. He comes equipped with a robust set of certifications, including Project Management, Working at Heights, Asbestos Abatement (Class 1 & 2), and comprehensive quality systems (IATF 16949 & ISO 9001). This extensive accreditation ensures his unwavering commitment to regulatory compliance and leadership in both safety and quality standards across all projects.
 
@@ -146,7 +146,7 @@ Rodrigo is a distinguished member of the Canadian Institute of Quantity Surveyor
     },
     { 
       name: 'Nami Sugimoto', 
-      position: 'Operations Manager - Need BIO', 
+      position: 'Operations Manager', 
       image: '/images/team/nami.webp',
       bio: `Stephen Lawrence is a highly skilled Construction Manager and a Licensed Professional Engineer (PEO), holding a Bachelor's in Mechanical Engineering from McMaster University. He comes equipped with a robust set of certifications, including Project Management, Working at Heights, Asbestos Abatement (Class 1 & 2), and comprehensive quality systems (IATF 16949 & ISO 9001). This extensive accreditation ensures his unwavering commitment to regulatory compliance and leadership in both safety and quality standards across all projects.
 
@@ -156,7 +156,7 @@ As an experienced Senior Site Supervisor and General Manager, Stephen brings inv
     },
     { 
       name: 'Cynthia Yvonne', 
-      position: 'Operations Manager - Need BIO', 
+      position: 'Communications & Client Relations', 
       image: '/images/team/nami.webp',
       bio: `Stephen Lawrence is a highly skilled Construction Manager and a Licensed Professional Engineer (PEO), holding a Bachelor's in Mechanical Engineering from McMaster University. He comes equipped with a robust set of certifications, including Project Management, Working at Heights, Asbestos Abatement (Class 1 & 2), and comprehensive quality systems (IATF 16949 & ISO 9001). This extensive accreditation ensures his unwavering commitment to regulatory compliance and leadership in both safety and quality standards across all projects.
 
@@ -166,7 +166,7 @@ As an experienced Senior Site Supervisor and General Manager, Stephen brings inv
     },
     { 
       name: 'Davian Brooks', 
-      position: 'Operations Analyst - Need BIO', 
+      position: 'Analyst', 
       image: '/images/team/davian.webp',
       bio: `Stephen Lawrence is a highly skilled Construction Manager and a Licensed Professional Engineer (PEO), holding a Bachelor's in Mechanical Engineering from McMaster University. He comes equipped with a robust set of certifications, including Project Management, Working at Heights, Asbestos Abatement (Class 1 & 2), and comprehensive quality systems (IATF 16949 & ISO 9001). This extensive accreditation ensures his unwavering commitment to regulatory compliance and leadership in both safety and quality standards across all projects.
 

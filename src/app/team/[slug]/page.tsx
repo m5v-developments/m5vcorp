@@ -7,7 +7,7 @@ const teamMembers = [
   {
     slug: 'sherard-mcqueen',
     name: 'Sherard McQueen',
-    position: 'Co-Founder | Sales & Marketing',
+    position: 'Co-Founder, Managing Partner | Sales & Marketing',
     image: '/images/team/Sherard.png',
     bio: 'Experienced sales and marketing professional with a proven track record in business development.',
     linkedin_url: 'https://www.linkedin.com/in/sherard-mcqueen-32b76224/',

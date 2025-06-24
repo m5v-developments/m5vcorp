@@ -39,10 +39,10 @@ const InvestmentPhilosophy = () => {
         <div className="flex flex-col md:flex-row gap-8">
           {/* Left side - Text Content */}
           <div className="w-full md:w-1/2">
-            <h2 className="text-sm uppercase tracking-wider font-medium mb-6 text-accent-blue">
+            <h2 className="text-sm uppercase tracking-widest font-medium mb-6 text-accent-blue">
               How We Do It
             </h2>
-            <p className="text-[2.75rem] leading-tight font-medium text-primary-black mb-16">
+            <p className="text-h2 leading-tight font-medium text-primary-black mb-16">
               Our integrated model maximizes value at every stage of development.
             </p>
 

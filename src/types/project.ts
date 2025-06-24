@@ -7,6 +7,7 @@ export interface ProjectImages {
   hero: string;
   spot: string;
   banner: string;
+  feature: string;
   gallery: string[];
 }
 

@@ -115,7 +115,7 @@ interface FiltersProps {
   }) => void;
 }
 
-const STATUS_OPTIONS = ['Active', 'Completed', 'Coming Soon'];
+const STATUS_OPTIONS = ['Completed', 'Construction', 'Sales', 'Planning'];
 
 export default function ProjectFilters({
   count,

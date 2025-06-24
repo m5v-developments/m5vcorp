@@ -25,10 +25,10 @@ const PlatformCards = () => {
   return (
     <section className="bg-off-white py-24 px-4 md:px-8">
       <div className="container mx-auto">
-        <h2 className="text-sm uppercase tracking-wider font-medium text-left mb-4 text-primary-black">
+        <h2 className="text-sm uppercase tracking-widest font-medium text-left mb-2 text-primary-black">
           What We Do
         </h2>
-        <p className="text-h2 font-medium text-left max-w-3xl mb-16 text-primary-black">
+        <p className="text-h2 font-medium text-left leading-tight max-w-3xl mb-16 text-primary-black">
           We create lasting value by building homes where people want—and can afford—to live.
         </p>
         
@@ -55,9 +55,6 @@ const PlatformCards = () => {
                   <span className="text-accent-blue">{platform.title}</span>
                 </h3>
                 <p className="text-gray-600 mb-4">{platform.description}</p>
-                <button className="text-accent-blue hover:underline">
-                  Learn More
-                </button>
               </div>
             </div>
           ))}

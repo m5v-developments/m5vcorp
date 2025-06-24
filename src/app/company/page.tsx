@@ -71,9 +71,9 @@ export default function CompanyPage(): JSX.Element {
         <div className="max-w-6xl mx-auto flex flex-col">
           {/* Text Block */}
           <div className="w-full mb-8">
-            <div className="text-sm uppercase tracking-wider font-medium mb-2 text-accent-blue">Our Story</div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-medium mb-4">From Brokers to Builders</h2>
-            <div className="space-y-4 text-lg leading-relaxed text-black">
+            <div className="text-sm uppercase tracking-widest font-medium mb-2 text-accent-blue mb-2">Our Story</div>
+            <h2 className="text-h2 font-medium leading-tight mb-4">From Brokers to Builders</h2>
+            <div className="space-y-4 text-lg text-black">
               <p>
                 M5V began in 2008 as a residential brokerage rooted in Toronto's M5V postal code, where Sherard McQueen and Yaseen Nimjee built a reputation on trust, results, and deep market insight.
               </p>
@@ -106,10 +106,10 @@ export default function CompanyPage(): JSX.Element {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Text Column */}
           <div>
-            <div className="text-sm uppercase tracking-widest font-medium mb-2 text-accent-blue font-calibre">
+            <div className="text-sm uppercase tracking-widest font-medium mb-2 text-accent-blue">
               OUR MISSION
             </div>
-            <h2 id="mission-heading" className="text-3xl sm:text-4xl md:text-5xl font-medium mb-4 text-black-primary font-calibre">
+            <h2 id="mission-heading" className="text-h2 font-medium mb-4 text-black-primary">
               Democratizing Real Estate For All
             </h2>
             <p className="text-lg leading-relaxed text-black mb-4 font-calibre">
@@ -141,7 +141,7 @@ export default function CompanyPage(): JSX.Element {
           <p className="text-sm uppercase tracking-widest font-medium mb-2 text-accent-blue">
             Our Principles
           </p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-medium text-off-white mb-8">
+          <h2 className="text-h2 font-display font-medium text-off-white mb-8">
             What Guides Every Decision
           </h2>
 
@@ -164,7 +164,7 @@ export default function CompanyPage(): JSX.Element {
       <section className="py-16 px-4 md:px-8 bg-off-white">
         <div className="max-w-6xl mx-auto">
           <p className="text-sm uppercase tracking-widest font-medium mb-2 text-accent-blue">Case Studies</p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-medium text-black-primary mb-8">
+          <h2 className="text-h2 font-display font-medium text-black-primary mb-8">
             Our Projects Are Built for Success. See It Yourself.
           </h2>
 
@@ -194,19 +194,19 @@ export default function CompanyPage(): JSX.Element {
                 firstName: 'Sherard',
                 lastName: 'McQueen',
                 position: 'Sales & Marketing',
-                image: '/images/team/sherard.png'
+                image: '/images/team/sherard-2.webp'
               },
               {
                 firstName: 'Yaseen',
                 lastName: 'Nimjee',
                 position: 'Construction & Development',
-                image: '/images/team/yaseen.png'
+                image: '/images/team/yaseen.webp'
               },
               {
                 firstName: 'Rajeev',
                 lastName: 'Viswanathan',
                 position: 'Finance & Operations',
-                image: '/images/team/rajeev.png'
+                image: '/images/team/rajeev.webp'
               }
             ].map((member, index) => (
               <div 

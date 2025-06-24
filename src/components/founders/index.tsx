@@ -13,14 +13,14 @@ const Founders = () => {
       firstName: 'Yaseen',
       lastName: 'Nimjee',
       position: 'Construction & Development',
-      image: '/images/team/Yaseen.png',
+      image: '/images/team/yaseen.webp',
       id: 'yaseen'
     },
     {
       firstName: 'Rajeev',
       lastName: 'Viswanathan',
       position: 'Finance & Operations',
-      image: '/images/team/Rajeev.png',
+      image: '/images/team/rajeev.webp',
       id: 'rajeev'
     }
   ];

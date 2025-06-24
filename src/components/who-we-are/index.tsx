@@ -47,7 +47,7 @@ const WhoWeAre = () => {
       <div className="container mx-auto">
         {/* Intro text */}
         <div className="max-w-4xl mb-20">
-          <h2 className="text-sm uppercase tracking-wider font-medium mb-8">Who We Are</h2>
+          <h2 className="text-sm uppercase tracking-wider font-medium mb-2">Who We Are</h2>
           <p className="text-h2 leading-tight font-medium">
             We are builders of communities, not just buildings.
           </p>

@@ -4,16 +4,25 @@ import { NewsItem } from '@/types/news';
 export const newsItems: NewsItem[] = [
   {
     id: 'rajeev-joins',
-    headline: 'Rajeev Viswanathan Joins M5V as a Managing Partner',
-    date: '2024-04-30',
-    author: 'Davian Brooks',
+    headline: 'Rajeev Viswanathan Joins M5V Developments as CFO',
+    date: '2025-06-27',
+    author: 'M5V Developments',
     preview: 'Forum Asset Management Announces Appointment Of Rajeev Viswanathan As Partner & Chief Financial Officer. Forum Asset Management ("Forum"), a private alternative investment and development firm with a focus on real assets, is pleased to announce the appointment of Rajeev Viswanathan as Partner & Chief Financial Officer.',
-    body: `Forum Asset Management Announces Appointment Of Rajeev Viswanathan As Partner & Chief Financial Officer
+    body: `Toronto, ON – [June 26, 2025] – M5V Developments (“M5V”) is pleased to announce that Rajeev Viswanathan has joined the firm as Managing Partner & CFO (Capital Strategy). Rajeev brings over two decades of experience in capital markets, real estate, and strategic finance, most recently serving as Managing Partner and Chief Financial Officer at Forum Asset Management.
 
-Forum Asset Management ("Forum"), a private alternative investment and development firm with a focus on real assets, is pleased to announce the appointment of Rajeev Viswanathan as Partner & Chief Financial Officer.
+At Forum, Rajeev played a pivotal role in scaling the organization, helping launch multiple private funds and build robust capital relationships. At M5V, he will lead the firm’s capital strategy and financial operations, supporting the growth and expansion of M5V.
 
-During his career, Mr. Viswanathan has worked for some of the largest Canadian real estate and asset management firms with global platforms. Prior to joining Forum, Rajeev was the CFO of Dream Global REIT, a Western European, $6 billion office and industrial platform that was acquired in 2019 by Blackstone. Previous to his appointment at Dream Global, Rajeev was CFO for Dream Office REIT. At Dream Office, Rajeev was instrumental in transforming the REIT from a cross-Canadian to a Toronto-centric office portfolio, to drive future value through development and intensification.`,
-    image: '/images/news/rajeev-forum-headshot.png',
+“Rajeev is a trusted partner with unmatched depth in finance, capital strategy, and global real estate,” said Yaseen Nimjee, Co-Founder, Managing Partner & COO (Construction and Development) of M5V Developments. “His leadership will be instrumental as build depth and breadth of capital sources to scale the business.”
+
+“We’ve worked with Rajeev for over two decades and couldn’t be more excited to formally welcome him as a partner,” added Sherard McQueen, Co-Founder, Managing Partner & CVO (Entitlements, Sales and Marketing) of M5V Developments. “His experience and entrepreneurial mindset are a perfect fit as we enter this next phase of growth.”
+
+M5V Developments is currently advancing a +$500 M development pipeline of seniors' housing and residential communities and is now launching external partnership and investment opportunities for the first time.
+
+For inquiries, please contact: 
+Rajeev Viswanathan 
+Managing Partner & CFO (Capital Strategy) 
+rajeev@m5vinc.com`,
+    image: '/images/team/rajeev.webp',
     category: 'Press Release'
   },
   {

@@ -51,9 +51,6 @@ const PlatformCards = () => {
               <div className="p-6 py-8">
                 <h3 className="text-xl font-medium mb-3">{platform.title}</h3>
                 <p className="text-gray-600 mb-4">{platform.description}</p>
-                <button className="text-accent-blue hover:underline">
-                  Learn More
-                </button>
               </div>
             </div>
           ))}

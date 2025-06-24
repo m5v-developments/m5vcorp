@@ -61,11 +61,11 @@ export default function CareersPage() {
       <section className="bg-off-white py-16 md:py-24 px-4 md:px-8">
         <div className="max-w-6xl mx-auto flex flex-col gap-8 items-center">
           <div className="w-full flex flex-col space-y-4">
-          <h2 className="text-accent-blue uppercase font-semibold tracking-widest text-sm mb-2">GROW WITH M5V</h2>
-            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-medium text-black mb-2">Ambitious Projects Need Ambitious People</h2>
-            <p className="font-sans text-black text-lg">At M5V, community-driven ambition and individual empowerment are fundamental to who we are. We seek purpose-led individuals who consistently aim higher, providing them with the autonomy, resources, and trust needed to deliver landmark projects that reshape Ontario's neighborhoods.</p>
-            <p className="font-sans text-black text-lg">Whether it's creating vibrant retirement communities or crafting unique cottage living experiences, our diverse teams—including engineers, planners, designers, and marketers—collaborate seamlessly at every stage. They leverage shared insights, agile workflows, and data-driven tools to turn bold concepts into tangible, lasting impact.</p>
-            <p className="font-sans text-black text-lg">Here, every voice counts, proactive problem-solving is championed, and clear opportunities exist for your professional growth and industry influence.</p>
+          <h2 className="text-accent-blue uppercase font-medium tracking-widest text-sm mb-2">GROW WITH M5V</h2>
+            <h2 className="text-h2 font-medium leading-tight text-black mb-2">Ambitious Projects Need Ambitious People</h2>
+            <p className="text-black text-lg">At M5V, community-driven ambition and individual empowerment are fundamental to who we are. We seek purpose-led individuals who consistently aim higher, providing them with the autonomy, resources, and trust needed to deliver landmark projects that reshape Ontario's neighborhoods.</p>
+            <p className="text-black text-lg">Whether it's creating vibrant retirement communities or crafting unique cottage living experiences, our diverse teams—including engineers, planners, designers, and marketers—collaborate seamlessly at every stage. They leverage shared insights, agile workflows, and data-driven tools to turn bold concepts into tangible, lasting impact.</p>
+            <p className="text-black text-lg">Here, every voice counts, proactive problem-solving is championed, and clear opportunities exist for your professional growth and industry influence.</p>
           </div>
           <div className="relative w-full h-72 md:h-[600px] overflow-hidden">
             <Image
@@ -86,9 +86,9 @@ export default function CareersPage() {
       <section className="bg-off-white py-16 px-4 md:px-8">
         <div className="max-w-6xl mx-auto md:grid md:grid-cols-2 gap-8 items-center">
           <div className="order-2 md:order-1 flex flex-col space-y-4 h-full">
-            <h2 className="uppercase font-semibold tracking-widest text-sm mb-4">LIFE AT M5V</h2>
-            <h3 className="font-display text-3xl sm:text-4xl md:text-5xl font-medium mb-4">We build communities outside, and inside, our office walls.</h3>
-            <ul className="list-disc pl-5 space-y-2 text-black font-sans text-lg">
+            <h2 className="text-accent-blue uppercase font-medium tracking-widest text-sm mb-2">LIFE AT M5V</h2>
+            <h3 className="text-h2 font-medium mb-4 leading-tight">We build communities outside, and inside, our office walls.</h3>
+            <ul className="list-disc pl-5 space-y-2 text-black text-lg">
               <li><span className="font-bold">Purpose-Driven Projects</span> — From retirement residences to cottage developments, our work shapes real lives across Ontario.</li>
               <li><span className="font-bold">Mentors in Every Meeting</span> — Our diverse team, from planners to marketers, collaborates seamlessly. Your unique perspective truly matters here.</li>
               <li><span className="font-bold">Career Lanes, Not Ladders</span> — Growth isn't linear. You'll find ample room to pivot, stretch your skills, and lead impactful initiatives from wherever you are.</li>
@@ -157,8 +157,8 @@ export default function CareersPage() {
       {/* Bottom CTA */}
       <section className="bg-black text-white py-12 px-4 md:px-8">
         <div className="max-w-6xl mx-auto flex flex-col items-start text-left">
-          <h3 className="text-3xl sm:text-4xl md:text-5xl font-medium font-bold mb-2">Ready to Shape the Future with Us?</h3>
-          <p className="mb-4 text-lg font-sans">Explore how your unique drive can help us redefine neighborhoods and communities.</p>
+          <h3 className="text-h2 font-medium leading-tight mb-2">Ready to Shape the Future with Us?</h3>
+          <p className="mb-4 text-lg">Explore how your unique drive can help us redefine neighborhoods and communities.</p>
           <a
             href="https://www.linkedin.com/company/m5v-developments/jobs/"
             target="_blank"
@@ -179,9 +179,9 @@ export default function CareersPage() {
 // --- ValuesCarousel Component ---
 const valuesData = [
   { icon: <FaUsers className="text-accent-blue text-3xl mb-2" />, title: 'Collaborate', desc: 'Bring your strengths but lean on others. We win by working together, not alone.' },
-  { icon: <FaBolt className="text-accent-blue text-3xl mb-2" />, title: 'Execute with Urgency', desc: 'Move fast with intention. Done and delivered beats delayed and perfect.' },
-  { icon: <FaFistRaised className="text-accent-blue text-3xl mb-2" />, title: 'Tenacious', desc: "Stay the course, even when it’s tough. We finish what we start." },
-  { icon: <FaBalanceScale className="text-accent-blue text-3xl mb-2" />, title: 'Integrity', desc: "Do the right thing, especially when no one’s watching." },
+  { icon: <FaBolt className="text-accent-blue text-3xl mb-2" />, title: 'GSD', desc: 'Move fast with intention. Done and delivered beats delayed and perfect.' },
+  { icon: <FaFistRaised className="text-accent-blue text-3xl mb-2" />, title: 'Gritty', desc: "Stay the course, even when it’s tough. We finish what we start." },
+  { icon: <FaBalanceScale className="text-accent-blue text-3xl mb-2" />, title: 'Ethical', desc: "Do the right thing, especially when no one’s watching." },
   { icon: <FaUserCheck className="text-accent-blue text-3xl mb-2" />, title: 'Accountable', desc: "Own your contributions from start to finish. We stand behind our work and grow from every experience." },
   { icon: <FaHandshake className="text-accent-blue text-3xl mb-2" />, title: 'Win-Win', desc: 'Lead with “How can I help?” and build relationships that benefit everyone involved.' },
 ]
@@ -296,9 +296,9 @@ function ValuesCarousel() {
       <div className="max-w-6xl mx-auto flex flex-col items-stretch">
         {/* Text Block */}
         <div className="flex flex-col justify-center mb-10">
-          <div className="uppercase font-semibold tracking-widest text-sm mb-4">OUR FOUNDATION</div>
-          <h3 className="font-display text-3xl sm:text-4xl md:text-5xl font-medium mb-4">Values at Our Core. Purpose in Every Project.</h3>
-          <p className="font-sans text-lg mb-2">At M5V, our work isn't just about buildings, it's about creating impact that lasts. Every project, every partnership, and every decision we make is guided by a set of values we live by daily.</p>
+          <div className="uppercase font-medium tracking-widest text-sm mb-2">OUR FOUNDATION</div>
+          <h3 className="text-h2 font-medium leading-tight mb-4">Values at Our Core. Purpose in Every Project.</h3>
+          <p className="text-lg mb-2">At M5V, our work isn't just about buildings, it's about creating impact that lasts. Every project, every partnership, and every decision we make is guided by a set of values we live by daily.</p>
         </div>
         
         {/* Carousel Container - Industry Standard Pattern */}

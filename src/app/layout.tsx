@@ -19,11 +19,10 @@ export const metadata: Metadata = {
   robots: "index, follow",
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/images/favicon/logo-favicon-32bit.ico', sizes: '32x32', type: 'image/x-icon' },
+      { url: '/images/favicon/logo-favicon-32bit.ico?v=3', sizes: '32x32', type: 'image/x-icon' },
     ],
-    shortcut: '/images/favicon/logo-favicon-32bit.ico',
-    apple: '/logo-favicon-180bit.png',
+    shortcut: '/images/favicon/logo-favicon-32bit.ico?v=3',
+    apple: '/images/favicon/logo-favicon-180bit.ico?v=3',
   },
 };
 

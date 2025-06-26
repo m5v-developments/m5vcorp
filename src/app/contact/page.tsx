@@ -1,10 +1,20 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function ContactPage() {
   const [uploadedFiles, setUploadedFiles] = useState<File[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
+  const formRef = useRef<HTMLFormElement>(null);
+
+  // Initialize EmailJS
+  useEffect(() => {
+    emailjs.init('yxLCHh55N-3qff18P');
+  }, []);
 
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = Array.from(event.target.files || []);
@@ -13,6 +23,70 @@ export default function ContactPage() {
 
   const removeFile = (index: number) => {
     setUploadedFiles(prev => prev.filter((_, i) => i !== index));
+  };
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setIsLoading(true);
+    setSubmitStatus('idle');
+    setErrorMessage('');
+
+    try {
+      // Validate required fields
+      const formData = new FormData(event.currentTarget);
+      const firstName = formData.get('firstName') as string;
+      const lastName = formData.get('lastName') as string;
+      const email = formData.get('email') as string;
+      const message = formData.get('message') as string;
+
+      if (!firstName || !lastName || !email || !message) {
+        throw new Error('Please fill in all required fields.');
+      }
+
+      // Email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        throw new Error('Please enter a valid email address.');
+      }
+
+      // Prepare template parameters
+      const templateParams = {
+        user_name: `${firstName} ${lastName}`,
+        user_email: email,
+        user_phone: formData.get('phone') as string || 'Not provided',
+        user_message: message,
+        uploaded_files: uploadedFiles.map(file => file.name).join(', ') || 'No files uploaded'
+      };
+
+      console.log('Sending email with params:', templateParams);
+
+      // Send email using EmailJS
+      const result = await emailjs.send(
+        'service_j16r4jk',
+        'template_mlo94x7',
+        templateParams,
+        'yxLCHh55N-3qff18P'
+      );
+
+      console.log('EmailJS result:', result);
+
+      if (result.status === 200) {
+        setSubmitStatus('success');
+        // Reset form using the ref instead of event.currentTarget
+        if (formRef.current) {
+          formRef.current.reset();
+        }
+        setUploadedFiles([]);
+      } else {
+        throw new Error(`Failed to send message. Status: ${result.status}`);
+      }
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      setSubmitStatus('error');
+      setErrorMessage(error instanceof Error ? error.message : 'An unexpected error occurred. Please try again.');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -51,26 +125,74 @@ export default function ContactPage() {
           {/* Right Panel */}
           <div className="md:col-start-7 md:col-end-13 w-full bg-accent-blue p-6 md:p-10 pt-12 md:pt-16 flex flex-col">
             <h2 className="mb-8 md:mb-10 text-3xl sm:text-4xl md:text-5xl font-medium text-off-white">Send an Inquiry</h2>
-            <form className="flex flex-col">
+            
+            {/* Status Messages */}
+            {submitStatus === 'success' && (
+              <div className="mb-6 p-4 bg-green-500/20 border border-green-500/50 rounded text-green-300">
+                <p className="text-[16px] leading-[24px]">Thank you! Your message has been sent successfully. We'll get back to you soon.</p>
+              </div>
+            )}
+            
+            {submitStatus === 'error' && (
+              <div className="mb-6 p-4 bg-red-500/20 border border-red-500/50 rounded text-red-300">
+                <p className="text-[16px] leading-[24px]">{errorMessage}</p>
+              </div>
+            )}
+
+            <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col">
               {/* First Name */}
-              <label htmlFor="firstName" className="mb-2 text-[18px] leading-[28px] text-off-white">First Name</label>
-              <input id="firstName" name="firstName" type="text" placeholder="Enter your first name" className="w-full h-12 mb-6 bg-transparent border-0 border-b border-[rgba(255,255,255,0.6)] focus:outline-none placeholder:italic placeholder:text-[18px] placeholder:text-[rgba(255,255,255,0.6)]" />
+              <label htmlFor="firstName" className="mb-2 text-[18px] leading-[28px] text-off-white">First Name *</label>
+              <input 
+                id="firstName" 
+                name="firstName" 
+                type="text" 
+                placeholder="Enter your first name" 
+                required
+                className="w-full h-12 mb-6 bg-transparent border-0 border-b border-[rgba(255,255,255,0.6)] focus:outline-none placeholder:italic placeholder:text-[18px] placeholder:text-[rgba(255,255,255,0.6)]" 
+              />
 
               {/* Last Name */}
-              <label htmlFor="lastName" className="mb-2 text-[18px] leading-[28px] text-off-white">Last Name</label>
-              <input id="lastName" name="lastName" type="text" placeholder="Enter your last name" className="w-full h-12 mb-6 bg-transparent border-0 border-b border-[rgba(255,255,255,0.6)] focus:outline-none placeholder:italic placeholder:text-[18px] placeholder:text-[rgba(255,255,255,0.6)]" />
+              <label htmlFor="lastName" className="mb-2 text-[18px] leading-[28px] text-off-white">Last Name *</label>
+              <input 
+                id="lastName" 
+                name="lastName" 
+                type="text" 
+                placeholder="Enter your last name" 
+                required
+                className="w-full h-12 mb-6 bg-transparent border-0 border-b border-[rgba(255,255,255,0.6)] focus:outline-none placeholder:italic placeholder:text-[18px] placeholder:text-[rgba(255,255,255,0.6)]" 
+              />
 
               {/* Email */}
-              <label htmlFor="email" className="mb-2 text-[18px] leading-[28px] text-off-white">Email</label>
-              <input id="email" name="email" type="email" placeholder="Enter your email" className="w-full h-12 mb-6 bg-transparent border-0 border-b border-[rgba(255,255,255,0.6)] focus:outline-none placeholder:italic placeholder:text-[18px] placeholder:text-[rgba(255,255,255,0.6)]" />
+              <label htmlFor="email" className="mb-2 text-[18px] leading-[28px] text-off-white">Email *</label>
+              <input 
+                id="email" 
+                name="email" 
+                type="email" 
+                placeholder="Enter your email" 
+                required
+                className="w-full h-12 mb-6 bg-transparent border-0 border-b border-[rgba(255,255,255,0.6)] focus:outline-none placeholder:italic placeholder:text-[18px] placeholder:text-[rgba(255,255,255,0.6)]" 
+              />
 
               {/* Phone */}
               <label htmlFor="phone" className="mb-2 text-[18px] leading-[28px] text-off-white">Phone</label>
-              <input id="phone" name="phone" type="tel" placeholder="Enter your phone" className="w-full h-12 mb-6 bg-transparent border-0 border-b border-[rgba(255,255,255,0.6)] focus:outline-none placeholder:italic placeholder:text-[18px] placeholder:text-[rgba(255,255,255,0.6)]" />
+              <input 
+                id="phone" 
+                name="phone" 
+                type="tel" 
+                placeholder="Enter your phone" 
+                className="w-full h-12 mb-6 bg-transparent border-0 border-b border-[rgba(255,255,255,0.6)] focus:outline-none placeholder:italic placeholder:text-[18px] placeholder:text-[rgba(255,255,255,0.6)]" 
+              />
 
               {/* Message */}
-              <label htmlFor="message" className="mb-2 text-[18px] leading-[28px] text-off-white">Message</label>
-              <textarea id="message" name="message" placeholder="Type your message" className="w-full h-24 mb-6 bg-transparent border-0 border-b border-[rgba(255,255,255,0.6)] focus:outline-none resize-none placeholder:italic placeholder:text-[18px] placeholder:text-[rgba(255,255,255,0.6)]" rows={2} />
+              <label htmlFor="message" className="mb-2 text-[18px] leading-[28px] text-off-white">Message *</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                placeholder="Type your message" 
+                required
+                className="w-full h-24 mb-6 bg-transparent border-0 border-b border-[rgba(255,255,255,0.6)] focus:outline-none resize-none placeholder:italic placeholder:text-[18px] placeholder:text-[rgba(255,255,255,0.6)]" 
+                rows={2} 
+              />
 
               {/* File Uploads */}
               <label htmlFor="file1" className="mb-2 text-[18px] leading-[28px] text-off-white">Upload Files</label>
@@ -111,9 +233,10 @@ export default function ContactPage() {
               <div className="flex justify-center mt-8">
                 <button 
                   type="submit" 
-                  className="px-6 py-3 bg-black-primary text-off-white font-regular text-[16px] leading-[24px] min-w-[180px] hover:bg-off-white hover:text-accent-blue transition-colors duration-200"
+                  disabled={isLoading}
+                  className="px-6 py-3 bg-black-primary text-off-white font-regular text-[16px] leading-[24px] min-w-[180px] hover:bg-off-white hover:text-accent-blue transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-black-primary disabled:hover:text-off-white"
                 >
-                  Submit Inquiry
+                  {isLoading ? 'Sending...' : 'Submit Inquiry'}
                 </button>
               </div>
             </form>

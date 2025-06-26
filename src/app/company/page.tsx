@@ -205,7 +205,7 @@ export default function CompanyPage(): JSX.Element {
               {
                 firstName: 'Rajeev',
                 lastName: 'Viswanathan',
-                position: 'Chief Financial Officer (Finance & Operations)',
+                position: 'Chief Financial Officer (Capital Strategy)',
                 image: '/images/team/rajeev.webp'
               }
             ].map((member, index) => (

@@ -19,7 +19,7 @@ const Founders = () => {
     {
       firstName: 'Rajeev',
       lastName: 'Viswanathan',
-      position: 'Chief Financial Officer (Finance & Operations)',
+      position: 'Chief Financial Officer (Capital Strategy)',
       image: '/images/team/rajeev.webp',
       id: 'rajeev'
     }

@@ -44,7 +44,7 @@ As Co-Founder, Yaseen oversees all aspects of construction and development, from
     },
     { 
       name: 'Rajeev Viswanathan', 
-      position: 'Managing Partner,\nChief Financial Officer (Finance & Operations)', 
+      position: 'Managing Partner,\nChief Financial Officer (Capital Strategy)', 
       image: '/images/team/rajeev.webp',
       bio: `At M5V, Rajeev leads the firm’s capital strategy and financial operations, supporting the continued growth and expansion of the platform.
       

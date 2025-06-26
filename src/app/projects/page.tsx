@@ -53,7 +53,7 @@ const Projects = (): JSX.Element => {
       {/* Hero Section */}
       <div className="w-full relative pt-56 pb-24 px-4 md:px-8 text-off-white h-[60vh] flex items-end">
         <Image
-          src="/images/niagara-falls.png"
+          src="/images/banner/niagara-banner.webp"
           alt="Niagara Falls Hero"
           fill
           className="object-cover object-center z-0"

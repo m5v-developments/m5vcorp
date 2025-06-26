@@ -47,7 +47,7 @@ export default async function NewsArticlePage({ params }: PageProps) {
           Back to News
         </Link>
         <div className="mb-8">
-          <span className="text-sm font-medium text-blue-600">{article.category}</span>
+          <span className="text-sm font-medium text-accent-blue uppercase tracking-widest">{article.category}</span>
           <h1 className="text-4xl font-bold mb-4 mt-2">{article.headline}</h1>
           <div className="text-gray-600">
             <time dateTime={article.date}>{formatDate(article.date)}</time>
@@ -62,7 +62,7 @@ export default async function NewsArticlePage({ params }: PageProps) {
               src={article.image}
               alt={article.headline}
               fill
-              className="object-cover rounded-lg"
+              className="object-cover"
               priority
             />
           </div>

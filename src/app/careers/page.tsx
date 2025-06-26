@@ -39,7 +39,7 @@ export default function CareersPage() {
       {/* Hero Section */}
       <div className="w-full relative pt-56 pb-24 px-4 md:px-8 text-white h-[60vh] flex items-end">
         <Image
-          src="/images/niagara-falls.png"
+          src="/images/banner/niagara-banner.webp"
           alt="Niagara Falls Hero"
           fill
           className="object-cover object-center z-0"
@@ -69,7 +69,7 @@ export default function CareersPage() {
           </div>
           <div className="relative w-full h-72 md:h-[600px] overflow-hidden">
             <Image
-              src="/images/misc/hh-group.webp"
+              src="/images/misc/office/boardroom-main-20250612.webp"
               alt="M5V Employee"
               fill
               className="object-cover object-center"
@@ -98,7 +98,7 @@ export default function CareersPage() {
           </div>
           <div className="relative w-full min-h-[300px] h-full flex-1 overflow-hidden order-1 md:order-2 mb-8 md:mb-0">
             <Image
-              src="/images/misc/him500-meeting-group-couch.webp"
+              src="/images/misc/office/rn-portrait.webp"
               alt="Team at work"
               fill
               className="object-cover object-center"
@@ -115,14 +115,17 @@ export default function CareersPage() {
             {[
               { src: '/images/misc/him500-meeting-portrait.webp', width: 400, height: 533 },
               { src: '/images/misc/him500-site-group.webp', width: 400, height: 300 },
-              { src: '/images/misc/hh-drilling.webp', width: 400, height: 533 },
-              { src: '/images/misc/muskoka-boating-group.webp', width: 400, height: 400 },
-              { src: '/images/misc/yaseen-group.webp', width: 400, height: 300 },
+              { src: '/images/misc/office/yaseen-sitting.webp', width: 400, height: 300 },
+              { src: '/images/misc/office/rajeev-smiling.webp', width: 400, height: 300 },
               { src: '/images/misc/worldtour-sherard-sitdown-closeup.webp', width: 400, height: 300 },
               { src: '/images/misc/hh-gloves.webp', width: 400, height: 533 },
               { src: '/images/misc/hh-site.webp', width: 400, height: 533 },
-              { src: '/images/misc/hh-walking1.webp', width: 400, height: 400 },
-              { src: '/images/misc/lakeview-group.webp', width: 400, height: 300 },
+              { src: '/images/misc/office/pm-portrait.webp', width: 400, height: 300 },
+              { src: '/images/misc/hh-drilling.webp', width: 400, height: 533 },
+              { src: '/images/misc/office/boardroom-20250612.webp', width: 400, height: 300 },
+              { src: '/images/misc/muskoka-boating-group.webp', width: 400, height: 300 },
+              { src: '/images/misc/office/rn-sitdown-office.webp', width: 400, height: 300 },
+              { src: '/images/misc/hh-group.webp', width: 400, height: 300 },
             ].slice(0, isMobile && !showAllPhotos ? 8 : undefined).map((img, i) => (
               <div key={i} className="break-inside-avoid mb-4 w-full">
                 <Image

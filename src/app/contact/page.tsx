@@ -44,8 +44,7 @@ export default function ContactPage() {
             </div>
             <div className="flex flex-col gap-2 w-full px-0 md:px-0">
               <div className="text-[16px] leading-[24px] text-off-white">150 Sterling Rd,<br />Toronto,<br />ON M6R 0C6<br />Unit 301</div>
-              <div className="text-[16px] leading-[24px] text-off-white">inquiries@m5vinc.com</div>
-              <div className="text-[16px] leading-[24px] text-off-white">416-457-6276</div>
+              <div className="text-[16px] leading-[24px] text-off-white">info@m5vinc.com</div>
             </div>
           </div>
 

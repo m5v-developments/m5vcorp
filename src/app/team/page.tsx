@@ -70,7 +70,7 @@ As Director of Entitlement, Linda works closely with municipalities and stakehol
 
 As Director of Sales, Sophia leads our sales team, implementing innovative strategies to connect with potential buyers and create exceptional customer experiences throughout the purchasing process.`,
       slug: 'sophia-bailey',
-      linkedinId: 'sophia-bailey-ab062233'
+      linkedinId: ''
     },
     { 
       name: 'Leo Thomas', 
@@ -87,7 +87,7 @@ Committed to operational excellence, Leo has implemented lean management program
     { 
       name: 'Reza Farahdel', 
       position: 'Controller', 
-      image: '/images/team/reza.webp',
+      image: '/images/team/reza-edit1.webp',
       bio: `Reza Farahdel is a Certified Public Accountant with extensive experience in financial management and reporting. His expertise in accounting principles and financial analysis helps ensure M5V's financial operations run smoothly and efficiently.
 
 As Controller, Reza manages all aspects of financial reporting, budgeting, and internal controls, providing valuable insights to support strategic decision-making and business growth.`,
@@ -115,24 +115,32 @@ Martina consistently helps brands achieve millions of impressions and significan
       linkedinId: 'immartinacabrera'
     },
     { 
-      name: 'Alex Tran', 
-      position: 'Intern', 
-      image: '/images/team/alex.webp',
-      bio: `Alex Tran brings a strong foundation in financial reporting, audit, and operations, cultivated through his roles at the Ontario Public Service, the CRA, and Fidelity Investments. Throughout his career, Alex has developed a keen ability to dig into data, identify patterns, and empower teams to make informed, strategic decisions.
-
-Currently on the path to earning his CPA designation, Alex is driven by the opportunity to tackle complex challenges and contribute meaningfully to an organization. His expertise spans audit, advisory, and financial analysis, reflecting his commitment to both precision and insightful contributions.`,
-      slug: 'alex-tran',
-      linkedinId: 'alex-tran-619853234'
-    },
-    { 
       name: 'Stephen Lawrence', 
       position: 'Site Supervisor (Niagara)', 
-      image: '/images/team/stephen.webp',
+      image: '/images/team/stephen-lawrence2.webp',
       bio: `Stephen Lawrence is a highly skilled Construction Manager and a Licensed Professional Engineer (PEO), holding a Bachelor's in Mechanical Engineering from McMaster University. He comes equipped with a robust set of certifications, including Project Management, Working at Heights, Asbestos Abatement (Class 1 & 2), and comprehensive quality systems (IATF 16949 & ISO 9001). This extensive accreditation ensures his unwavering commitment to regulatory compliance and leadership in both safety and quality standards across all projects.
 
 As an experienced Senior Site Supervisor and General Manager, Stephen brings invaluable hands-on experience managing a diverse range of private, commercial, and municipal construction projects. He excels in all facets of site-level project management, from meticulous scheduling and comprehensive crew training to consistently ensuring on-time project completion. Stephen also serves as the crucial primary liaison, fostering strong relationships with clients, architects, and all key stakeholders.`,
       slug: 'stephen-lawrence',
-      linkedinId: 'sherard-mcqueen'
+      linkedinId: ''
+    },
+    { 
+      name: 'Nami Sugimoto', 
+      position: 'Operations Manager', 
+      image: '/images/team/nami.webp',
+      bio: `
+      
+      `,
+      slug: 'nami-sugimoto',
+      linkedinId: ''
+    },
+    { 
+      name: 'Cynthia Yvonne', 
+      position: 'Communications & Client Relations', 
+      image: '/images/team/cynthia.webp',
+      bio: `Boasting a EdD in Education and over 40 years in academia, Cynthia's background as a media personality, author, and principal uniquely positions her to excel in communications and client relations. Her multi-disciplinary expertise ensures impactful messaging and exceptional support.`,
+      slug: 'cynthia-yvonne',
+      linkedinId: ''
     },
     { 
       name: 'Rodrigo Burgos', 
@@ -142,57 +150,41 @@ As an experienced Senior Site Supervisor and General Manager, Stephen brings inv
 
 Rodrigo is a distinguished member of the Canadian Institute of Quantity Surveyors as a Construction Estimator Certified (CIQS-CEC). He also holds a Bachelor of Science in Civil Engineering (BSCE) and is a Registered Licensed Professional Civil Engineer in the Philippines (PRC Licensed), underscoring his deep technical knowledge and professional accreditation.`,
       slug: 'rodrigo-burgos',
-      linkedinId: 'sherard-mcqueen'
-    },
-    { 
-      name: 'Nami Sugimoto', 
-      position: 'Operations Manager', 
-      image: '/images/team/nami.webp',
-      bio: `Stephen Lawrence is a highly skilled Construction Manager and a Licensed Professional Engineer (PEO), holding a Bachelor's in Mechanical Engineering from McMaster University. He comes equipped with a robust set of certifications, including Project Management, Working at Heights, Asbestos Abatement (Class 1 & 2), and comprehensive quality systems (IATF 16949 & ISO 9001). This extensive accreditation ensures his unwavering commitment to regulatory compliance and leadership in both safety and quality standards across all projects.
-
-As an experienced Senior Site Supervisor and General Manager, Stephen brings invaluable hands-on experience managing a diverse range of private, commercial, and municipal construction projects. He excels in all facets of site-level project management, from meticulous scheduling and comprehensive crew training to consistently ensuring on-time project completion. Stephen also serves as the crucial primary liaison, fostering strong relationships with clients, architects, and all key stakeholders.`,
-      slug: 'nami-sugimoto',
-      linkedinId: 'sherard-mcqueen'
-    },
-    { 
-      name: 'Cynthia Yvonne', 
-      position: 'Communications & Client Relations', 
-      image: '/images/team/nami.webp',
-      bio: `Stephen Lawrence is a highly skilled Construction Manager and a Licensed Professional Engineer (PEO), holding a Bachelor's in Mechanical Engineering from McMaster University. He comes equipped with a robust set of certifications, including Project Management, Working at Heights, Asbestos Abatement (Class 1 & 2), and comprehensive quality systems (IATF 16949 & ISO 9001). This extensive accreditation ensures his unwavering commitment to regulatory compliance and leadership in both safety and quality standards across all projects.
-
-As an experienced Senior Site Supervisor and General Manager, Stephen brings invaluable hands-on experience managing a diverse range of private, commercial, and municipal construction projects. He excels in all facets of site-level project management, from meticulous scheduling and comprehensive crew training to consistently ensuring on-time project completion. Stephen also serves as the crucial primary liaison, fostering strong relationships with clients, architects, and all key stakeholders.`,
-      slug: 'cynthia-yvonne',
-      linkedinId: 'sherard-mcqueen'
+      linkedinId: ''
     },
     { 
       name: 'Davian Brooks', 
       position: 'Analyst', 
       image: '/images/team/davian.webp',
-      bio: `Stephen Lawrence is a highly skilled Construction Manager and a Licensed Professional Engineer (PEO), holding a Bachelor's in Mechanical Engineering from McMaster University. He comes equipped with a robust set of certifications, including Project Management, Working at Heights, Asbestos Abatement (Class 1 & 2), and comprehensive quality systems (IATF 16949 & ISO 9001). This extensive accreditation ensures his unwavering commitment to regulatory compliance and leadership in both safety and quality standards across all projects.
-
-As an experienced Senior Site Supervisor and General Manager, Stephen brings invaluable hands-on experience managing a diverse range of private, commercial, and municipal construction projects. He excels in all facets of site-level project management, from meticulous scheduling and comprehensive crew training to consistently ensuring on-time project completion. Stephen also serves as the crucial primary liaison, fostering strong relationships with clients, architects, and all key stakeholders.`,
+      bio: ``,
       slug: 'davian-brooks',
       linkedinId: 'davianbrooks'
     },
     { 
       name: 'Naijah Paul', 
-      position: 'Administrative Assistant - Need BIO', 
-      image: '/images/team/nami.webp',
-      bio: `Stephen Lawrence is a highly skilled Construction Manager and a Licensed Professional Engineer (PEO), holding a Bachelor's in Mechanical Engineering from McMaster University. He comes equipped with a robust set of certifications, including Project Management, Working at Heights, Asbestos Abatement (Class 1 & 2), and comprehensive quality systems (IATF 16949 & ISO 9001). This extensive accreditation ensures his unwavering commitment to regulatory compliance and leadership in both safety and quality standards across all projects.
-
-As an experienced Senior Site Supervisor and General Manager, Stephen brings invaluable hands-on experience managing a diverse range of private, commercial, and municipal construction projects. He excels in all facets of site-level project management, from meticulous scheduling and comprehensive crew training to consistently ensuring on-time project completion. Stephen also serves as the crucial primary liaison, fostering strong relationships with clients, architects, and all key stakeholders.`,
+      position: 'Administrative Executive', 
+      image: '/images/team/naijah.webp',
+      bio: ``,
       slug: 'naijah-paul',
-      linkedinId: 'sherard-mcqueen'
+      linkedinId: ''
+    },
+    { 
+      name: 'Alex Tran', 
+      position: 'Editor', 
+      image: '/images/team/alex.webp',
+      bio: `Alex Tran brings a strong foundation in financial reporting, audit, and operations, cultivated through his roles at the Ontario Public Service, the CRA, and Fidelity Investments. Throughout his career, Alex has developed a keen ability to dig into data, identify patterns, and empower teams to make informed, strategic decisions.
+
+Currently on the path to earning his CPA designation, Alex is driven by the opportunity to tackle complex challenges and contribute meaningfully to an organization. His expertise spans audit, advisory, and financial analysis, reflecting his commitment to both precision and insightful contributions.`,
+      slug: 'alex-tran',
+      linkedinId: 'alex-tran-619853234'
     },
     { 
       name: 'Pritica Kher', 
-      position: 'Need BIO', 
-      image: '/images/team/nami.webp',
-      bio: `Stephen Lawrence is a highly skilled Construction Manager and a Licensed Professional Engineer (PEO), holding a Bachelor's in Mechanical Engineering from McMaster University. He comes equipped with a robust set of certifications, including Project Management, Working at Heights, Asbestos Abatement (Class 1 & 2), and comprehensive quality systems (IATF 16949 & ISO 9001). This extensive accreditation ensures his unwavering commitment to regulatory compliance and leadership in both safety and quality standards across all projects.
-
-As an experienced Senior Site Supervisor and General Manager, Stephen brings invaluable hands-on experience managing a diverse range of private, commercial, and municipal construction projects. He excels in all facets of site-level project management, from meticulous scheduling and comprehensive crew training to consistently ensuring on-time project completion. Stephen also serves as the crucial primary liaison, fostering strong relationships with clients, architects, and all key stakeholders.`,
+      position: 'Office Correspondent', 
+      image: '/images/team/pritica-edit.webp',
+      bio: ` `,
       slug: 'pritica-kher',
-      linkedinId: 'davianbrooks'
+      linkedinId: 'pritica-kher-5843b8315'
     },
   ];
 
@@ -204,7 +196,7 @@ As an experienced Senior Site Supervisor and General Manager, Stephen brings inv
       <div className="w-full relative pt-56 pb-24 px-4 md:px-8 text-white h-[60vh] flex items-end">
         {/* Background image */}
         <Image
-          src="/images/niagara-falls.png"
+          src="/images/banner/niagara-banner.webp"
           alt="Our Team"
           fill
           className="object-cover object-center z-0"
@@ -263,7 +255,7 @@ As an experienced Senior Site Supervisor and General Manager, Stephen brings inv
         >
           {/* Modal panel */}
           <div 
-            className="bg-white rounded-lg shadow-xl w-full max-w-3xl max-h-[90vh] overflow-y-auto overflow-x-hidden flex flex-col sm:flex-row"
+            className="bg-white rounded-lg shadow-xl w-full max-w-3xl min-h-[50vh] max-h-[90vh] overflow-y-auto overflow-x-hidden flex flex-col sm:flex-row"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Headshot container */}
@@ -293,7 +285,7 @@ As an experienced Senior Site Supervisor and General Manager, Stephen brings inv
                 )}
               </div>
               {/* LinkedIn link - sticky at bottom */}
-              {selectedMember.linkedinId && (
+              {selectedMember.linkedinId && selectedMember.linkedinId.trim() !== '' ? (
                 <div className="mt-4 flex-shrink-0">
                   <a
                     href={`https://www.linkedin.com/in/${selectedMember.linkedinId}`}
@@ -310,6 +302,25 @@ As an experienced Senior Site Supervisor and General Manager, Stephen brings inv
                       <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
                     </svg>
                     Add on LinkedIn
+                  </a>
+                </div>
+              ) : (
+                <div className="mt-4 flex-shrink-0">
+                  <a
+                    href="https://www.linkedin.com/company/m5v-developments"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-accent-blue font-medium"
+                  >
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      viewBox="0 0 24 24" 
+                      fill="currentColor" 
+                      className="h-5 w-5 mr-2"
+                    >
+                      <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                    </svg>
+                    Visit Company LinkedIn
                   </a>
                 </div>
               )}

@@ -16,7 +16,7 @@ export default function NewsPage() {
       <div className="w-full relative pt-56 pb-24 px-4 md:px-8 text-white h-[60vh] flex items-end">
         {/* Background image */}
         <Image
-          src="/images/niagara-falls.png"
+          src="/images/banner/niagara-banner.webp"
           alt="News Hero"
           fill
           className="object-cover object-center z-0"

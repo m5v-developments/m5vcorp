@@ -41,7 +41,7 @@ export const projects: Project[] = [
     description: "A 60-unit collection of modern condominiums featuring 3-story buildings and a mix of suite types, located in Niagara Falls.",
     stats: [
       { label: "Location", value: "Niagara Falls, ON" },
-      { label: "Units", value: "60" },
+      { label: "Units", value: "54" },
       { label: "Beds", value: "80" },
       { label: "Exit Strategy", value: "Sale" },
       { label: "Status", value: "Completed" },
@@ -104,7 +104,7 @@ export const projects: Project[] = [
     description: "Lake-view retirement living in Orillia: 100 modern one- and two-bedroom suites with walk-out patios, chef-prepared meals, and 24/7 care on Lake Couchiching.",
     stats: [
       { label: "Location", value: "Orillia, ON" },
-      { label: "Units", value: "90" },
+      { label: "Units", value: "100" },
       { label: "Beds", value: "200" },
       { label: "Exit Strategy", value: "Operating" },
       { label: "Status", value: "Completed" },
@@ -169,7 +169,7 @@ export const projects: Project[] = [
     slug: "the-niagara-phase-2",
     assetClass: "Residential",
     subType: "Stacked Towns",
-    description: "A new collection of four sculptural buildings on 1.3 acres, adding 60 light-filled homes up to 950 sq ft along McLeod Road.",
+    description: "A new collection of four sculptural buildings on 1.2 acres, adding 60 light-filled homes up to 950 sq ft along McLeod Road.",
 
     stats: [
       { label: "Location", value: "Niagara Falls, ON" },
@@ -245,18 +245,11 @@ export const projects: Project[] = [
     ],
     longDescription: "The Niagara Phase IV directly extends the vision of Phase I, adding an exclusive collection of 39 contemporary suites on a compact 0.94-acre site. Seamlessly integrated next door, this intimate enclave offers stylish one- and two-storey residences with expansive windows, outdoor terraces, and modern finishes, reinforcing the cohesive architectural identity of the growing community. Shared pathways, green spaces, and direct access to neighbourhood amenities enhance the sense of community, while Phase IV’s placement enriches the pedestrian-friendly streetscape along McLeod Road, reinforcing its evolution as a dynamic residential and commercial hub in Niagara Falls.",
     images: {
-      hero: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-      spot: "/images/m5v_portfolio/the-niagara-phase-3/phase3-lookout.webp",
-      banner: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-      feature: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
+      hero: "/images/m5v_portfolio/the-niagara-phase-4/phase4-blueprint.webp",
+      spot: "/images/m5v_portfolio/the-niagara-phase-4/phase4-blueprint.webp",
+      banner: "/images/m5v_portfolio/the-niagara-phase-4/phase4-blueprint.webp",
+      feature: "/images/m5v_portfolio/the-niagara-phase-4/phase4-blueprint.webp",
       gallery: [
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bedroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bathroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-livingroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bedroom2.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-livingroom2.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-parkinglot.webp",
       ]
     }
   },
@@ -264,31 +257,28 @@ export const projects: Project[] = [
     name: "WESTMOUNT",
     slug: "westmount",
     assetClass: "Residential",
-    subType: "Stacked Towns",
-    description: "The Niagara Phase IV expands Phase I with an intimate addition of 39 residences on 0.94 acres, deepening the community’s walkable lifestyle along McLeod Road.",
+    subType: "Multi-Family Condominium",
+    description: "Westmount Residences is a boutique community of 114 modern stacked townhomes across six low-rise buildings, each featuring private walk-out patios, landscaped courtyards, and convenient bike and parking provisions.",
     stats: [
       { label: "Location", value: "Orillia, ON" },
-      { label: "Units", value: "39" },
+      { label: "Units", value: "114" },
       { label: "Beds", value: "200" },
       { label: "Exit Strategy", value: "Sale" },
       { label: "Status", value: "Planning" },
       { label: "Asset Class", value: "Residential" },
-      { label: "Sub Type", value: "Stacked Towns" }
+      { label: "Sub Type", value: "Multi-Family Condominium" }
     ],
-    longDescription: "The Niagara Phase IV directly extends the vision of Phase I, adding an exclusive collection of 39 contemporary suites on a compact 0.94-acre site. Seamlessly integrated next door, this intimate enclave offers stylish one- and two-storey residences with expansive windows, outdoor terraces, and modern finishes, reinforcing the cohesive architectural identity of the growing community. Shared pathways, green spaces, and direct access to neighbourhood amenities enhance the sense of community, while Phase IV’s placement enriches the pedestrian-friendly streetscape along McLeod Road, reinforcing its evolution as a dynamic residential and commercial hub in Niagara Falls.",
+    longDescription: "Westmount Residences redefines medium-density living in Orillia with 114 thoughtfully designed stacked townhomes grouped into six two-storey clusters around tranquil courtyard and sunken-patio spaces. Each home opens onto a private outdoor patio and benefits from surface parking, bike racks, and mail and parcel hubs. Generous green buffers and shared amenity zones foster neighborly connections, while wide sidewalks and a dedicated fire-route drive aisle ensure easy circulation. Positioned between John and Mary Streets, moments from downtown shops, waterfront trails, and local parks, Westmount Residences blends community, comfort, and active living in the heart of Orillia.",
     images: {
-      hero: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-      spot: "/images/m5v_portfolio/the-niagara-phase-3/phase3-lookout.webp",
-      banner: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-      feature: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
+      hero: "/images/m5v_portfolio/westmount/westmount-aerial.webp",
+      spot: "/images/m5v_portfolio/westmount/westmount-front1.webp",
+      banner: "/images/m5v_portfolio/westmount/westmount-aerial.webp",
+      feature: "/images/m5v_portfolio/westmount/westmount-front1.webp",
       gallery: [
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bedroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bathroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-livingroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bedroom2.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-livingroom2.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-parkinglot.webp",
+        "/images/m5v_portfolio/westmount/westmount-living.webp",
+        "/images/m5v_portfolio/westmount/westmount-bedroom2.webp",
+        "/images/m5v_portfolio/le-falls/lefalls-bedroom.webp",
+        "/images/m5v_portfolio/westmount/westmount-front1.webp"
       ]
     }
   },
@@ -296,8 +286,8 @@ export const projects: Project[] = [
     name: "SUNDIAL LAKEVIEW PHASE 2",
     slug: "sundial-phase-2",
     assetClass: "Residential",
-    subType: "Stacked Towns",
-    description: "The Niagara Phase IV expands Phase I with an intimate addition of 39 residences on 0.94 acres, deepening the community’s walkable lifestyle along McLeod Road.",
+    subType: "Multi-Family Condominium",
+    description: "Sundial Phase 2 adds on a refined collection of 150 modern one- and two-bedroom homes—each extending to a private balcony creating a truly balanced lifestyle within a 12-storey building.",
     stats: [
       { label: "Location", value: "Orillia, ON" },
       { label: "Units", value: "39" },
@@ -305,22 +295,18 @@ export const projects: Project[] = [
       { label: "Exit Strategy", value: "Sale" },
       { label: "Status", value: "Construction" },
       { label: "Asset Class", value: "Residential" },
-      { label: "Sub Type", value: "Stacked Towns" }
+      { label: "Sub Type", value: "Multi-Family Condominium" }
     ],
-    longDescription: "The Niagara Phase IV directly extends the vision of Phase I, adding an exclusive collection of 39 contemporary suites on a compact 0.94-acre site. Seamlessly integrated next door, this intimate enclave offers stylish one- and two-storey residences with expansive windows, outdoor terraces, and modern finishes, reinforcing the cohesive architectural identity of the growing community. Shared pathways, green spaces, and direct access to neighbourhood amenities enhance the sense of community, while Phase IV’s placement enriches the pedestrian-friendly streetscape along McLeod Road, reinforcing its evolution as a dynamic residential and commercial hub in Niagara Falls.",
+    longDescription: "Rising 12 storeys above Lake Couchiching, Sundial Phase 2 unveils 150 light-filled homes, enriching the Sundial campus with elevated living. From private balconies that perfectly frame sunrise views over the water, to curated on-site amenities—including a dedicated business centre, state-of-the-art fitness studio, and versatile activity room for gatherings—every detail is meticulously crafted for balanced living. Residents here explore winding waterfront trails, relax in breezy picnic groves, and immerse themselves in lakeside life, with accessible downtown Orillia amenities just moments away. Here, lakeside tranquility meets everyday convenience, fostering a supportive community where comfort and engagement flourish.",
     images: {
-      hero: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-      spot: "/images/m5v_portfolio/the-niagara-phase-3/phase3-lookout.webp",
-      banner: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-      feature: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
+      hero: "/images/m5v_portfolio/sundial-phase2/sundial-p2-render2.webp",
+      spot: "/images/m5v_portfolio/sundial-phase2/sundial-p2-living2.webp",
+      banner: "/images/m5v_portfolio/sundial-phase2/sundial-p2-render2.webp",
+      feature: "/images/m5v_portfolio/sundial-phase2/sundial-p2-render2.webp",
       gallery: [
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bedroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bathroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-livingroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bedroom2.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-livingroom2.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-parkinglot.webp",
+        "/images/m5v_portfolio/sundial-phase2/sundial-p2-living.webp",
+        "/images/m5v_portfolio/sundial-phase2/sundial-p2-activity.webp",
+        "/images/m5v_portfolio/sundial-phase2/sundial-p2-living2.webp"
       ]
     }
   },
@@ -328,31 +314,28 @@ export const projects: Project[] = [
     name: "SUNDIAL LAKEVIEW PHASE 3",
     slug: "sundial-phase-3",
     assetClass: "Residential",
-    subType: "Stacked Towns",
-    description: "The Niagara Phase IV expands Phase I with an intimate addition of 39 residences on 0.94 acres, deepening the community’s walkable lifestyle along McLeod Road.",
+    subType: "Senior Apartments",
+    description: "A modern rental apartment community designed for independent senior living. Located in the heart of Orillia’s Sundial Campus, Phase 3 continues the evolution of a vibrant, age-forward neighbourhood.",
     stats: [
       { label: "Location", value: "Orillia, ON" },
-      { label: "Units", value: "39" },
+      { label: "Units", value: "132" },
       { label: "Beds", value: "200" },
       { label: "Exit Strategy", value: "Sale" },
       { label: "Status", value: "Planning" },
       { label: "Asset Class", value: "Residential" },
-      { label: "Sub Type", value: "Stacked Towns" }
+      { label: "Sub Type", value: "Senior Apartments" }
     ],
-    longDescription: "The Niagara Phase IV directly extends the vision of Phase I, adding an exclusive collection of 39 contemporary suites on a compact 0.94-acre site. Seamlessly integrated next door, this intimate enclave offers stylish one- and two-storey residences with expansive windows, outdoor terraces, and modern finishes, reinforcing the cohesive architectural identity of the growing community. Shared pathways, green spaces, and direct access to neighbourhood amenities enhance the sense of community, while Phase IV’s placement enriches the pedestrian-friendly streetscape along McLeod Road, reinforcing its evolution as a dynamic residential and commercial hub in Niagara Falls.",
+    longDescription: "Sundial Residences Phase 3 is a 2-acre development envisioned as a mid-rise apartment complex focused on active senior renters.  This next phase is positioned to deliver over 100 thoughtfully designed rental units with integrated amenity and green spaces. Site plan approvals are in place, and the project is anticipated to launch construction in 2027..",
     images: {
-      hero: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-      spot: "/images/m5v_portfolio/the-niagara-phase-3/phase3-lookout.webp",
-      banner: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-      feature: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
+      hero: "/images/m5v_portfolio/sundial-phase3/sundial-p3-render2.webp",
+      spot: "/images/m5v_portfolio/sundial-phase3/sundial-p3-terrace.webp",
+      banner: "/images/m5v_portfolio/sundial-phase3/sundial-p3-render.webp",
+      feature: "/images/m5v_portfolio/sundial-phase3/sundial-p3-render2.webp",
       gallery: [
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bedroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bathroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-livingroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bedroom2.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-livingroom2.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-parkinglot.webp",
+        "/images/m5v_portfolio/sundial-phase3/sundial-p3-terrace.webp",
+        "/images/m5v_portfolio/sundial-phase2/sundial-p2-living.webp",
+        "/images/m5v_portfolio/sundial-phase2/sundial-p2-activity.webp",
+        "/images/m5v_portfolio/sundial-phase2/sundial-p2-living2.webp"      
       ]
     }
   },
@@ -360,31 +343,24 @@ export const projects: Project[] = [
     name: "SUNDIAL LAKEVIEW PHASE 4",
     slug: "sundial-phase-4",
     assetClass: "Residential",
-    subType: "Stacked Towns",
-    description: "The Niagara Phase IV expands Phase I with an intimate addition of 39 residences on 0.94 acres, deepening the community’s walkable lifestyle along McLeod Road.",
+    subType: "Multi-Family Condominium",
+    description: "An upcoming condominium phase offering attainable ownership for seniors and empty-nesters seeking community, lifestyle, and connection—all within the growing Sundial District.",
     stats: [
       { label: "Location", value: "Orillia, ON" },
-      { label: "Units", value: "39" },
+      { label: "Units", value: "114" },
       { label: "Beds", value: "200" },
       { label: "Exit Strategy", value: "Sale" },
       { label: "Status", value: "Planning" },
       { label: "Asset Class", value: "Residential" },
-      { label: "Sub Type", value: "Stacked Towns" }
+      { label: "Sub Type", value: "Multi-Family Condominium" }
     ],
-    longDescription: "The Niagara Phase IV directly extends the vision of Phase I, adding an exclusive collection of 39 contemporary suites on a compact 0.94-acre site. Seamlessly integrated next door, this intimate enclave offers stylish one- and two-storey residences with expansive windows, outdoor terraces, and modern finishes, reinforcing the cohesive architectural identity of the growing community. Shared pathways, green spaces, and direct access to neighbourhood amenities enhance the sense of community, while Phase IV’s placement enriches the pedestrian-friendly streetscape along McLeod Road, reinforcing its evolution as a dynamic residential and commercial hub in Niagara Falls.",
+    longDescription: "Phase 4 builds on the success of earlier phases, offering a condominium format tailored for aging-in-place. Situated on 2 acres adjacent to Phases 2 and 3, this multifamily project will emphasize flexible suite layouts, elevator access, and indoor–outdoor gathering spaces. Phase 4 represents M5V’s deepening commitment to long-term community creation in Orillia.",
     images: {
-      hero: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-      spot: "/images/m5v_portfolio/the-niagara-phase-3/phase3-lookout.webp",
-      banner: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-      feature: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
+      hero: "/images/m5v_portfolio/sundial-phase4/sundial-p4-blueprint.webp",
+      spot: "/images/m5v_portfolio/sundial-phase4/sundial-p4-blueprint.webp",
+      banner: "/images/m5v_portfolio/sundial-phase4/sundial-p4-blueprint.webp",
+      feature: "/images/m5v_portfolio/sundial-phase4/sundial-p4-blueprint.webp",
       gallery: [
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bedroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bathroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-livingroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bedroom2.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-livingroom2.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-parkinglot.webp",
       ]
     }
   },
@@ -392,31 +368,24 @@ export const projects: Project[] = [
     name: "SUNDIAL LAKEVIEW PHASE 5",
     slug: "sundial-phase-5",
     assetClass: "Residential",
-    subType: "Stacked Towns",
-    description: "The Niagara Phase IV expands Phase I with an intimate addition of 39 residences on 0.94 acres, deepening the community’s walkable lifestyle along McLeod Road.",
+    subType: "Memory Care",
+    description: "A future-forward memory care and assisted living residence, Phase 5 will complete the Sundial Campus with dedicated support services in a purpose-built setting.",
     stats: [
       { label: "Location", value: "Orillia, ON" },
-      { label: "Units", value: "39" },
+      { label: "Units", value: "TBD" },
       { label: "Beds", value: "200" },
       { label: "Exit Strategy", value: "Sale" },
       { label: "Status", value: "Planning" },
       { label: "Asset Class", value: "Residential" },
-      { label: "Sub Type", value: "Stacked Towns" }
+      { label: "Sub Type", value: "Memory Care" }
     ],
-    longDescription: "The Niagara Phase IV directly extends the vision of Phase I, adding an exclusive collection of 39 contemporary suites on a compact 0.94-acre site. Seamlessly integrated next door, this intimate enclave offers stylish one- and two-storey residences with expansive windows, outdoor terraces, and modern finishes, reinforcing the cohesive architectural identity of the growing community. Shared pathways, green spaces, and direct access to neighbourhood amenities enhance the sense of community, while Phase IV’s placement enriches the pedestrian-friendly streetscape along McLeod Road, reinforcing its evolution as a dynamic residential and commercial hub in Niagara Falls.",
+    longDescription: "Phase 5 is planned as a specialized 1-acre development designed to provide safe, comfortable, and dignified care for seniors requiring memory support or daily assistance. This facility will prioritize accessibility, medical readiness, and sensory-informed design. This phase will round out the full continuum of care envisioned at Sundial—from independent living to supportive housing—anchoring the district as a benchmark for aging-in-place innovation in Ontario’s secondary markets..",
     images: {
-      hero: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-      spot: "/images/m5v_portfolio/the-niagara-phase-3/phase3-lookout.webp",
-      banner: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-      feature: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
+      hero: "/images/m5v_portfolio/sundial-phase5/sundial-p5-blueprint.webp",
+      spot: "/images/m5v_portfolio/sundial-phase5/sundial-p5-blueprint.webp",
+      banner: "/images/m5v_portfolio/sundial-phase5/sundial-p5-blueprint.webp",
+      feature: "/images/m5v_portfolio/sundial-phase5/sundial-p5-blueprint.webp",
       gallery: [
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bedroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bathroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-livingroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bedroom2.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-livingroom2.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-parkinglot.webp",
       ]
     }
   },
@@ -424,7 +393,7 @@ export const projects: Project[] = [
     name: "THE LUNDY",
     slug: "lundy",
     assetClass: "Residential",
-    subType: "Condominium",
+    subType: "Multi-Family Condominium",
     description: "A vibrant six-storey mixed-use community, pivoting Lundy’s Lane’s revitalization, with 195 contemporary suites, street-level retail, and extensive wellness-focused amenities in Niagara Falls.",
     stats: [
       { label: "Location", value: "Niagara Falls, ON" },
@@ -433,22 +402,18 @@ export const projects: Project[] = [
       { label: "Exit Strategy", value: "Sale" },
       { label: "Status", value: "Planning" },
       { label: "Asset Class", value: "Residential" },
-      { label: "Sub Type", value: "Condominium" }
+      { label: "Sub Type", value: "Multi-Family Condominium" }
     ],
     longDescription: "The Lundy’s Lane development by M5V unveils a thoughtfully designed six-storey residential and retail hub, strategically positioned along one of Niagara Falls’ most vibrant corridors. Offering 195 contemporary studio to three-bedroom suites, including accessible units, the building champions efficient, modern living complemented by a robust commercial precense that dynamically activates the street frontage, enhancing walkability and convenience, while ample underground and surface parking supports residents and retail customers alike.",
     images: {
-      hero: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-      spot: "/images/m5v_portfolio/the-niagara-phase-3/phase3-lookout.webp",
-      banner: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-      feature: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
+      hero: "/images/m5v_portfolio/lundy/lundy-render.webp",
+      spot: "/images/m5v_portfolio/lundy/lundy-render.webp",
+      banner: "/images/m5v_portfolio/lundy/lundy-render-rear.webp",
+      feature: "/images/m5v_portfolio/lundy/lundy-render.webp",
       gallery: [
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bedroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bathroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-livingroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bedroom2.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-livingroom2.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-parkinglot.webp",
+        "/images/m5v_portfolio/lundy/lundy-coffee.webp",
+        "/images/m5v_portfolio/lundy/lundy-sitdown.webp",
+        "/images/m5v_portfolio/lundy/lundy-yoga.webp"
       ]
     }
   },
@@ -457,30 +422,22 @@ export const projects: Project[] = [
     slug: "torchlight-academy",
     assetClass: "Institutional",
     subType: "School",
-    description: "The Niagara Phase IV expands Phase I with an intimate addition of 39 residences on 0.94 acres, deepening the community’s walkable lifestyle along McLeod Road.",
+    description: "Torchlight Academy is a free K–8 public charter school in Raleigh offering 100% virtual or in-building instruction, rigorous private-quality curriculum, and multilingual immersion in Spanish, Mandarin, and Arabic.",
     stats: [
       { label: "Location", value: "Raleigh, NC" },
-      { label: "Units", value: "39" },
       { label: "Beds", value: "200" },
       { label: "Exit Strategy", value: "Sale" },
-      { label: "Status", value: "Coming Soon" },
+      { label: "Status", value: "Completed" },
       { label: "Asset Class", value: "Residential" },
       { label: "Sub Type", value: "Stacked Towns" }
     ],
-    longDescription: "The Niagara Phase IV directly extends the vision of Phase I, adding an exclusive collection of 39 contemporary suites on a compact 0.94-acre site. Seamlessly integrated next door, this intimate enclave offers stylish one- and two-storey residences with expansive windows, outdoor terraces, and modern finishes, reinforcing the cohesive architectural identity of the growing community. Shared pathways, green spaces, and direct access to neighbourhood amenities enhance the sense of community, while Phase IV’s placement enriches the pedestrian-friendly streetscape along McLeod Road, reinforcing its evolution as a dynamic residential and commercial hub in Niagara Falls.",
+    longDescription: "dTorchlight Academy blends the academic excellence of private schools with the accessibility of a free public charter, serving K–8 students across North Carolina in both 100% virtual and on-campus formats. Ranked #1 in growth for math and reading among state charter schools, the academy fosters global citizenship through language programs in Spanish, Mandarin, and Arabic, and supports every learner with tutoring, special-education services, and technology-driven instruction. Campus life features uniformed classrooms, dedicated computer labs with Kindles, and a secure, nurturing environment—including transportation and a robust anti-bullying policy—while a dynamic calendar of events, from movie nights to cultural excursions, ensures students thrive academically, socially, and emotionally.",
     images: {
-      hero: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-      spot: "/images/m5v_portfolio/the-niagara-phase-3/phase3-lookout.webp",
-      banner: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-      feature: "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
+      hero: "/images/m5v_portfolio/torchlight/torchlight-front.webp",
+      spot: "/images/m5v_portfolio/torchlight/torchlight-front.webp",
+      banner: "/images/m5v_portfolio/torchlight/torchlight-front.webp",
+      feature: "/images/m5v_portfolio/torchlight/torchlight-front.webp",
       gallery: [
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-exterior.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bedroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bathroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-livingroom.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-bedroom2.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-livingroom2.webp",
-        "/images/m5v_portfolio/the-niagara-phase-3/phase3-parkinglot.webp",
       ]
     }
   },

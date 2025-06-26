@@ -36,7 +36,7 @@ const StickyHeader = () => {
       {/* Top ticker with gradient background */}
       <div className="min-h-8 bg-gradient-to-r from-black-primary to-accent-blue flex items-center px-4 md:px-6 py-2">
         <p className="text-off-white text-s md:text-sm leading-tight">
-          Latest: M5V DEVELOPMENTS HAS A CORPORATE WEBSITE (in development)
+          Latest: M5V Developments has launched The Muskoka Lake Houses, a collection of 22 lake homes directly on the water.
         </p>
       </div>
 

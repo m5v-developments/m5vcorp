@@ -23,11 +23,11 @@ export default function FeaturedNewsCard({ item }: FeaturedNewsCardProps) {
             <div className="w-full h-full bg-gray-200" />
           )}
         </div>
-        <div className="md:w-[40%]">
-          <p className="text-sm font-semibold tracking-wider text-[#008DB7] uppercase mb-2">
+        <div className="md:w-[60%]">
+          <p className="text-sm font-medium tracking-widest text-[#008DB7] uppercase mb-2">
             {item.category}
           </p>
-          <h2 className="text-2xl md:text-3xl font-semibold text-[#008DB7] group-hover:underline">
+          <h2 className="text-2xl md:text-3xl font-medium text-[#008DB7] group-hover:underline">
             {item.headline}
           </h2>
           <div className="mt-3 text-sm text-gray-600">

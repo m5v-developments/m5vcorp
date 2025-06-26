@@ -11,25 +11,25 @@ const InvestmentPhilosophy = () => {
       number: '1',
       title: 'Construction Excellence',
       description: 'Clustering projects, using pre-fab systems, and sourcing globally lets us reduce costs and accelerate build times.',
-      image: '/images/m5v_portfolio/the-niagara-phase-1/sherard-construction.webp'
+      image: '/images/m5v_portfolio/the-niagara-phase-1/sherard-construction-1.webp'
     },
     {
       number: '2',
       title: 'Marketing Innovation',
       description: 'With 2M+ monthly reach and in-house sales, we achieve rapid sell-through while cutting marketing costs by up to 90%.',
-      image: '/images/marketing-innovation.jpg'
+      image: '/images/misc/atlanta-group.webp'
     },
     {
       number: '3',
       title: 'Strategic Land Acquisition',
       description: 'We target underutilized sites and unlock value through rezoning and density optimization.',
-      image: '/images/land-acquisition.jpg'
+      image: '/images/m5v_portfolio/the-niagara-phase-1/the-niagara-drawings-3.webp'
     },
     {
       number: '4',
       title: 'Financial Discipline',
       description: 'We minimize risk with strong financing, pre-sales, and private/institutional lending relationships to maintain stable cash flow.',
-      image: '/images/financial-discipline.jpg'
+      image: '/images/misc/office/rn-sitdown-office.webp'
     }
   ];
 
@@ -95,7 +95,9 @@ const InvestmentPhilosophy = () => {
                               alt={point.title}
                               fill
                               className="object-cover"
-                              sizes="100vw"
+                              sizes="(max-width: 768px) 100vw, 50vw"
+                              quality={90}
+                              priority={index === 0}
                             />
                           </div>
                         </div>
@@ -109,26 +111,33 @@ const InvestmentPhilosophy = () => {
           </div>
 
           {/* Right side - Desktop Images */}
-          <div className="hidden md:block w-1/2 relative">
-            {points.map((point, index) => (
-              <div 
-                key={index}
-                className={`absolute inset-0 transition-all duration-500 ${
-                  activePoint === index ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-                }`}
-              >
-                <div className="relative w-full h-full">
+          <div className="hidden md:block w-1/2">
+            <div className="relative aspect-[8/7] w-full">
+              {points.map((point, index) => (
+                <div 
+                  key={index}
+                  className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
+                    activePoint === index ? 'opacity-100' : 'opacity-0'
+                  }`}
+                  style={{
+                    willChange: activePoint === index ? 'opacity' : 'auto'
+                  }}
+                >
                   <Image
                     src={point.image}
                     alt={point.title}
                     fill
                     className="object-cover"
                     priority={index === 0}
-                    sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    quality={90}
+                    style={{
+                      willChange: activePoint === index ? 'transform' : 'auto'
+                    }}
                   />
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

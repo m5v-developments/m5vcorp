@@ -5,24 +5,60 @@ export const newsItems: NewsItem[] = [
   {
     id: 'rajeev-joins',
     headline: 'Rajeev Viswanathan Joins M5V Developments as CFO',
-    date: '2025-06-27',
+    date: '2025-06-28',
     author: 'M5V Developments',
-    preview: 'Forum Asset Management Announces Appointment Of Rajeev Viswanathan As Partner & Chief Financial Officer. Forum Asset Management ("Forum"), a private alternative investment and development firm with a focus on real assets, is pleased to announce the appointment of Rajeev Viswanathan as Partner & Chief Financial Officer.',
-    body: `Toronto, ON – [June 26, 2025] – M5V Developments (“M5V”) is pleased to announce that Rajeev Viswanathan has joined the firm as Managing Partner & CFO (Capital Strategy). Rajeev brings over two decades of experience in capital markets, real estate, and strategic finance, most recently serving as Managing Partner and Chief Financial Officer at Forum Asset Management.
+    preview: 'With over 20 years of capital markets and real estate experience, Rajeev will lead M5V’s capital strategy as the firm accelerates its $500M+ development pipeline and welcomes new investment partners.',
+    body: `M5V Developments (“M5V”) is pleased to announce that Rajeev Viswanathan (CPA, CA, CFA, ICD.D) has joined the firm as Managing Partner, Chief Financial Officer (Capital Strategy).
 
-At Forum, Rajeev played a pivotal role in scaling the organization, helping launch multiple private funds and build robust capital relationships. At M5V, he will lead the firm’s capital strategy and financial operations, supporting the growth and expansion of M5V.
+ 
 
-“Rajeev is a trusted partner with unmatched depth in finance, capital strategy, and global real estate,” said Yaseen Nimjee, Co-Founder, Managing Partner & COO (Construction and Development) of M5V Developments. “His leadership will be instrumental as build depth and breadth of capital sources to scale the business.”
+Rajeev brings over two decades of experience in capital markets, real estate, and strategic finance. Most recently, he served as Managing Partner & CFO at Forum Asset Management. Prior to Forum, he was the CFO of Dream Global REIT, a $6 billion Western European office platform dual-listed on the TSX and Frankfurt Stock Exchange, which was acquired by Blackstone in 2019. Before that, he spent nearly a decade at Brookfield in various senior finance roles. Rajeev also serves on the board of the Greater Toronto Airports Authority.
 
-“We’ve worked with Rajeev for over two decades and couldn’t be more excited to formally welcome him as a partner,” added Sherard McQueen, Co-Founder, Managing Partner & CVO (Entitlements, Sales and Marketing) of M5V Developments. “His experience and entrepreneurial mindset are a perfect fit as we enter this next phase of growth.”
+ 
 
-M5V Developments is currently advancing a +$500 M development pipeline of seniors' housing and residential communities and is now launching external partnership and investment opportunities for the first time.
+At M5V, Rajeev will lead the firm’s capital strategy and financial operations, supporting the continued growth and expansion of the platform.
 
-For inquiries, please contact: 
-Rajeev Viswanathan 
-Managing Partner & CFO (Capital Strategy) 
-rajeev@m5vinc.com`,
+ 
+
+“Rajeev is a trusted partner with unmatched depth in finance, capital strategy, and global real estate,” said Yaseen Nimjee, Managing Partner, Chief Operating Officer (Construction & Development) at M5V Developments. “His leadership will be instrumental as we build the depth and breadth of our capital sources to scale the business.”
+
+ 
+
+“We’ve worked with Rajeev for over two decades and couldn’t be more excited to formally welcome him as a partner,” added Sherard McQueen, Managing Partner, Chief Visionary Officer (Entitlements, Sales & Marketing) at M5V Developments. “His experience and entrepreneurial mindset are a perfect fit as we enter this next phase of growth.”
+
+ 
+
+M5V Developments is currently advancing a $500+ million development pipeline of seniors’ housing and residential communities and is now launching external partnership and investment opportunities for the first time.
+
+ 
+
+For inquiries, please contact:
+Rajeev Viswanathan
+rajeev@m5vinc.com `,
     image: '/images/team/rajeev.webp',
+    category: 'Press Release'
+  },
+  {
+    id: 'sundial-phase2-sod-turning',
+    headline: "Sod Turning Celebrates New Seniors' Apartment at Sundial Lakeview",
+    date: '2025-06-24',
+    author: 'M5V Developments',
+    preview: "A ceremonial sod turning marks the start of construction on 152 new seniors' apartments—advancing M5V’s vision for a complete, connected retirement community in the heart of Orillia.",
+    body: `A ceremonial sod turning will mark the start of construction for Sundial Lakeview Residences, a new 12-storey, 152-unit seniors' apartment at 600 Sundial Drive. This development represents the second phase of the growing Sundial Lakeview Retirement & Residences community, following the successful opening of Sundial Lakeview Retirement. 
+
+Mayor Don Mcisaac, local councillors, and members of the community will join Yaseen Nimjee, President of M5V Developments Inc., and Sundial Lakeview Retirement and Residences to celebrate this exciting milestone in Orillia's evolving housing landscape for seniors. 
+
+"This next phase brings a fresh offering to Orillia-modern, affordable, and community-focused seniors' apartments," said Nimjee. "We're proud to continue building a complete retirement community in the heart of the city." 
+
+Following the ceremony, guests are invited to enjoy a complimentary BBQ lunch hosted at Sundial Lakeview Retirement, with an opportunity to meet the development team and learn more about the vision behind this multi-phased campus. 
+
+Quick Facts: 
+What: Sod-turning ceremony for Sundial Lakeview Residences 
+When: Thursday, July 3, 2025 at 12:00 PM 
+Where: 600 Sundial Drive, Orillia (Event entrance via Laclie Street, behind existing Sundial Retirement Residence) 
+Who: Mayor Don Mclsaac, MSV President Yaseen Nimjee, local leaders 
+Why: Celebrating the launch of a 152-unit, seniors-focused apartment residence - Phase Two of Sundial's community vision. `,
+    image: '/images/m5v_portfolio/sundial-phase2/sundial-p2-render.webp',
     category: 'Press Release'
   },
   {
@@ -30,12 +66,19 @@ rajeev@m5vinc.com`,
     headline: 'Bringing Stacked Towns to Niagara: What Phase 1 Taught Us',
     date: '2024-03-15',
     author: 'Sherard McQueen',
-    preview: 'When we broke ground on The Niagara Phase 1, stacked townhomes were virtually unheard of in the Niagara region. Local product leaned toward traditional two-storey homes, but we saw an opportunity: increase density, maintain liveability, and unlock affordability for a new generation of buyers.',
-    body: `When we broke ground on The Niagara Phase 1, stacked townhomes were virtually unheard of in the Niagara region. Local product leaned toward traditional two-storey homes, but we saw an opportunity: increase density, maintain liveability, and unlock affordability for a new generation of buyers.
+    preview: ' Discover how Niagara Phase 1 delivered modern, amenity-rich homes at accessible prices, proving that innovative design can redefine regional real estate.',
+    body: `When we began The Niagara Phase 1, stacked townhomes were virtually unknown in the Niagara region. Traditional housing primarily consisted of conventional two-storey homes, which were less efficient in land use and often less affordable. We saw an opportunity to meet an unmet market demand with a new vision: a modern, efficient design that would increase density without compromising liveability or community appeal.
 
-Our vision was to create a community that combined the best of urban living with the comfort of suburban life. The stacked townhome design allowed us to maximize land use while providing residents with private outdoor spaces and modern amenities.
+    Our strategy centered on introducing a pioneering concept for the region: stacked townhomes. By arranging units vertically, we significantly maximized land utilization, which in turn reduced the land cost per unit. This innovative design directly translated into tangible savings for the consumer, offering modern, amenity-rich living spaces at more accessible price points.
 
-The project's success has demonstrated that innovative housing solutions can thrive in secondary markets. By challenging conventional wisdom and focusing on quality design, we've created a blueprint for future developments in the region.`,
+    We meticulously tailored our sales design to resonate with Niagara's preferences. By deeply understanding local needs, we created layouts that offered spaciousness and comfort, with an envelope that fit seamlessly with the direction we saw Niagara going. Every design element was carefully considered to appeal to young professionals and growing families seeking a balance between urban conveniences and suburban tranquility.
+
+    Leveraging our robust in-house sales and marketing teams, we significantly streamlined the sales process, accelerating sell-through rates. This reduction in overhead allowed us to further lower costs and deliver exceptional value to our buyers, solidifying our position as pioneers in affordable, quality housing solutions.
+
+    The success of The Niagara Phase 1 surpassed our expectations and firmly validated our vision. It proved that innovative, thoughtfully designed housing solutions could thrive beyond primary urban markets, making a significant impact in secondary regions like Niagara. Our groundbreaking approach not only provided a blueprint for future developments but also reshaped regional housing expectations, making contemporary, affordable living accessible to more buyers than ever before.
+
+    Through our forward-thinking strategy and unwavering commitment to affordability and quality, we've set a new standard in regional real estate development. We've shown how thoughtful design and strategic innovation can transform market dynamics and unlock previously unseen value.
+`,
     image: '/images/m5v_portfolio/the-niagara-phase-1/drone.webp',
     category: 'Case Study'
   },
@@ -56,39 +99,17 @@ The project's success demonstrates how persistence, expertise, and community eng
   {
     id: 'niagara-completion',
     headline: 'The Niagara Phase 1 Reaches Successful Completion',
-    date: '2024-03-15',
-    author: 'Davian Brooks',
-    preview: 'M5V Developments celebrates the completion of The Niagara Phase 1, delivering 60 modern residential units in Niagara Falls. The project demonstrates our commitment to quality and community development.',
+    date: '2022-10-15',
+    author: 'Sherard McQueen',
+    preview: "M5V's Niagara Phase 1 is complete. 54 high-quality, modern homes now define living in the heart of Niagara Falls.",
     body: `M5V Developments is proud to announce the successful completion of The Niagara Phase 1, a significant milestone in our commitment to developing high-quality residential spaces in Ontario's growing communities.
 
-The project, which began construction in early 2023, has delivered 60 modern residential units that combine contemporary design with practical living spaces. Each unit features premium finishes, energy-efficient appliances, and thoughtfully designed floor plans that maximize both comfort and functionality.
+The project, which began construction in early 2021, has delivered 54 modern residential units that combine contemporary design with practical living spaces. Each unit features premium finishes, energy-efficient appliances, and thoughtfully designed floor plans that maximize both comfort and functionality.
 
 Located in the heart of Niagara Falls, the development provides residents with easy access to local amenities while maintaining a sense of community and privacy. The project's completion marks another step in M5V's mission to create sustainable, accessible housing solutions in Ontario's secondary markets.
 
-"The completion of The Niagara Phase 1 represents more than just adding new units to the market," says Sherard McQueen, Co-Founder of M5V. "It's about creating homes where people can thrive and build their futures. We're particularly proud of the quality and attention to detail that went into every aspect of this development."`,
-    image: '/images/m5v_portfolio/the-niagara-phase-1/drone.jpg',
+"The completion of The Niagara Phase 1 represents more than just adding new units to the market," says Sherard McQueen, Managing Partner and Chief Visionary Officer of M5V. "It's about creating homes where people can thrive and build their futures."`,
+    image: '/images/news/niagara-sherard-salute-crop.jpg',
     category: 'Project Update'
-  },
-  {
-    id: 'market-insights-2024',
-    headline: '2024 Real Estate Market Insights: Opportunities in Ontario',
-    date: '2024-02-28',
-    author: 'Davian Brooks',
-    preview: 'Our latest market analysis reveals emerging opportunities in Ontario\'s real estate sector. From urban developments to suburban growth, we break down the trends shaping investment strategies.',
-    body: `The Ontario real estate market continues to evolve in 2024, presenting both challenges and opportunities for investors and developers. Our comprehensive analysis reveals several key trends that are shaping the market landscape.
-
-Urban Core Revitalization
-Despite previous concerns about the future of urban centers, we're seeing a strong return to city living, particularly in mid-sized Ontario cities. This trend is driven by improved infrastructure, cultural amenities, and the growing preference for walkable communities.
-
-Secondary Market Growth
-Secondary markets like Niagara, Simcoe County, and Muskoka are experiencing unprecedented growth. These regions offer a compelling combination of affordability, quality of life, and strong potential for appreciation. Our data shows that investment in these markets has increased by 45% compared to the previous year.
-
-Sustainable Development Focus
-Environmental considerations are no longer optional in real estate development. Projects that incorporate sustainable features and energy-efficient designs are seeing higher demand and better returns. This trend aligns with both consumer preferences and regulatory requirements.
-
-Investment Implications
-For investors and developers, these trends suggest a need to diversify portfolios beyond traditional urban centers. The opportunity lies in identifying underserved markets where population growth and infrastructure development create natural demand for quality housing solutions.`,
-    image: '/images/news/market-update-2024.png',
-    category: 'Market Update'
   }
 ]; 

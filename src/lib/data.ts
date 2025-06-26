@@ -6,7 +6,7 @@ export const projects: Project[] = [
     slug: "le-falls",
     assetClass: "Residential",
     subType: "Townhomes",
-    description: "A 113-unit freehold townhome development on 10.4 acres in Niagara Falls, featuring rooftop terraces, bold architecture, and large 5-bedroom layouts.",
+    description: "A 113-unit freehold townhome development on 11.7 acres in Niagara Falls, featuring rooftop terraces, bold architecture, and large 5-bedroom layouts.",
     stats: [
       { label: "Location", value: "Niagara Falls, ON" },
       { label: "Units", value: "113" },
@@ -16,7 +16,7 @@ export const projects: Project[] = [
       { label: "Asset Class", value: "Residential" },
       { label: "Sub Type", value: "Townhomes" }
     ],
-    longDescription: "Le Falls is a master-planned community of 113 freehold townhomes on 10.4 acres in Niagara Falls, offering up to 1,700 sq ft of living space with options for five-bedroom layouts. Designed with oversized windows, rooftop terraces, and folding glass walls, these 3-storey homes feature 9' smooth ceilings, upgraded kitchens, and modern brick-and-wood facades. Located along Kalar Road, residents enjoy convenient access to local amenities, parkland, and future transit connections, all within a quiet, residential setting.",
+    longDescription: "Le Falls is a master-planned community of 113 freehold townhomes on 11.7 acres in Niagara Falls, offering up to 1,700 sq ft of living space with options for five-bedroom layouts. Designed with oversized windows, rooftop terraces, and folding glass walls, these 3-storey homes feature 9' smooth ceilings, upgraded kitchens, and modern brick-and-wood facades. Located along Kalar Road, residents enjoy convenient access to local amenities, parkland, and future transit connections, all within a quiet, residential setting.",
     images: {
       hero: "/images/m5v_portfolio/le-falls/le_falls_aerial.webp",
       spot: "/images/m5v_portfolio/le-falls/le_falls_closeup.webp",
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     slug: "niagara-phase-1",
     assetClass: "Residential",
     subType: "Stacked Towns",
-    description: "A 60-unit collection of modern condominiums featuring 3-story buildings and a mix of suite types, located in Niagara Falls.",
+    description: "A 54-unit collection of modern condominiums featuring 3-story buildings and a mix of suite types, located in Niagara Falls.",
     stats: [
       { label: "Location", value: "Niagara Falls, ON" },
       { label: "Units", value: "54" },
@@ -48,7 +48,7 @@ export const projects: Project[] = [
       { label: "Asset Class", value: "Residential" },
       { label: "Sub Type", value: "Stacked Towns" }
     ],
-    longDescription: "The Niagara Condominiums by M5V Developments reimagines urban living with three sculptural buildings set on 1.2 acres of lush greenspace in Niagara Falls. This boutique enclave comprises just 60 residences—from efficient 427 sq ft studios to expansive two-storey townhomes—each flooded with natural light through oversized windows and featuring private outdoor access. Select homes are crowned by exclusive rooftop terraces, while the main building's dramatic brick-and-glass façade commands McLeod Road, making a bold statement to the surrounding neighbourhood.",
+    longDescription: "The Niagara Condominiums by M5V Developments reimagines urban living with three sculptural buildings set on 1.2 acres of lush greenspace in Niagara Falls. This boutique enclave comprises just 54 residences—from efficient 427 sq ft studios to expansive two-storey townhomes—each flooded with natural light through oversized windows and featuring private outdoor access. Select homes are crowned by exclusive rooftop terraces, while the main building's dramatic brick-and-glass façade commands McLeod Road, making a bold statement to the surrounding neighbourhood.",
     images: {
       hero: "/images/m5v_portfolio/the-niagara-phase-1/drone.webp",
       spot: "/images/m5v_portfolio/the-niagara-phase-1/portrait.webp",
@@ -290,7 +290,7 @@ export const projects: Project[] = [
     description: "Sundial Phase 2 adds on a refined collection of 150 modern one- and two-bedroom homes—each extending to a private balcony creating a truly balanced lifestyle within a 12-storey building.",
     stats: [
       { label: "Location", value: "Orillia, ON" },
-      { label: "Units", value: "39" },
+      { label: "Units", value: "150" },
       { label: "Beds", value: "200" },
       { label: "Exit Strategy", value: "Sale" },
       { label: "Status", value: "Construction" },
@@ -379,7 +379,7 @@ export const projects: Project[] = [
       { label: "Asset Class", value: "Residential" },
       { label: "Sub Type", value: "Memory Care" }
     ],
-    longDescription: "Phase 5 is planned as a specialized 1-acre development designed to provide safe, comfortable, and dignified care for seniors requiring memory support or daily assistance. This facility will prioritize accessibility, medical readiness, and sensory-informed design. This phase will round out the full continuum of care envisioned at Sundial—from independent living to supportive housing—anchoring the district as a benchmark for aging-in-place innovation in Ontario’s secondary markets..",
+    longDescription: "Phase 5 is planned as a specialized 1-acre development designed to provide safe, comfortable, and dignified care for seniors requiring memory support or daily assistance. This facility will prioritize accessibility, medical readiness, and sensory-informed design. This phase will round out the full continuum of care envisioned at Sundial—from independent living to supportive housing—anchoring the district as a benchmark for aging-in-place innovation in Ontario’s secondary markets.",
     images: {
       hero: "/images/m5v_portfolio/sundial-phase5/sundial-p5-blueprint.webp",
       spot: "/images/m5v_portfolio/sundial-phase5/sundial-p5-blueprint.webp",
@@ -420,7 +420,7 @@ export const projects: Project[] = [
   {
     name: "TORCHLIGHT ACADEMY",
     slug: "torchlight-academy",
-    assetClass: "Institutional",
+    assetClass: "Education",
     subType: "School",
     description: "Torchlight Academy is a free K–8 public charter school in Raleigh offering 100% virtual or in-building instruction, rigorous private-quality curriculum, and multilingual immersion in Spanish, Mandarin, and Arabic.",
     stats: [
@@ -428,8 +428,8 @@ export const projects: Project[] = [
       { label: "Beds", value: "200" },
       { label: "Exit Strategy", value: "Sale" },
       { label: "Status", value: "Completed" },
-      { label: "Asset Class", value: "Residential" },
-      { label: "Sub Type", value: "Stacked Towns" }
+      { label: "Asset Class", value: "Education" },
+      { label: "Sub Type", value: "School" }
     ],
     longDescription: "dTorchlight Academy blends the academic excellence of private schools with the accessibility of a free public charter, serving K–8 students across North Carolina in both 100% virtual and on-campus formats. Ranked #1 in growth for math and reading among state charter schools, the academy fosters global citizenship through language programs in Spanish, Mandarin, and Arabic, and supports every learner with tutoring, special-education services, and technology-driven instruction. Campus life features uniformed classrooms, dedicated computer labs with Kindles, and a secure, nurturing environment—including transportation and a robust anti-bullying policy—while a dynamic calendar of events, from movie nights to cultural excursions, ensures students thrive academically, socially, and emotionally.",
     images: {

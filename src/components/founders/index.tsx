@@ -5,21 +5,21 @@ const Founders = () => {
     {
       firstName: 'Sherard',
       lastName: 'McQueen',
-      position: 'Sales & Marketing',
+      position: 'Chief Visionary Officer (Entitlement Sales & Marketing)',
       image: '/images/team/sherard-2.webp',
       id: 'sherard'
     },
     {
       firstName: 'Yaseen',
       lastName: 'Nimjee',
-      position: 'Construction & Development',
+      position: 'Chief Operating Officer (Construction & Development)',
       image: '/images/team/yaseen.webp',
       id: 'yaseen'
     },
     {
       firstName: 'Rajeev',
       lastName: 'Viswanathan',
-      position: 'Finance & Operations',
+      position: 'Chief Financial Officer (Finance & Operations)',
       image: '/images/team/rajeev.webp',
       id: 'rajeev'
     }
@@ -51,6 +51,9 @@ const Founders = () => {
                     </p>
                     <p className="text-2xl font-medium mb-3 uppercase tracking-wider">
                       {founder.lastName}
+                    </p>
+                    <p className="text-off-white mb-2">
+                      Managing Partner
                     </p>
                     <p className="text-off-white">
                       {founder.position}

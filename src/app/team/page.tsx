@@ -24,7 +24,7 @@ export default function TeamPage() {
   const teamMembers: TeamMember[] = [
     { 
       name: 'Sherard McQueen', 
-      position: 'Co-Founder, Sales & Marketing', 
+      position: 'Managing Partner,\nChief Visionary Officer (Entitlement Sales & Marketing)', 
       image: '/images/team/sherard-2.webp',
       bio: `Sherard McQueen brings over 15 years of experience in real estate development and sales, having successfully closed over $2B in transactions and managed 75+ property acquisitions. His expertise in market analysis and strategic planning has been instrumental in M5V's growth and success.
 
@@ -34,7 +34,7 @@ As Co-Founder, Sherard leads our sales and marketing initiatives, ensuring our d
     },
     { 
       name: 'Yaseen Nimjee', 
-      position: 'Co-Founder | Construction & Development', 
+      position: 'Managing Partner,\nChief Operating Officer (Construction & Development)', 
       image: '/images/team/yaseen.webp',
       bio: `Yaseen Nimjee is a seasoned professional with extensive experience in construction management and real estate development. His technical expertise and hands-on approach have been crucial in delivering high-quality projects that exceed industry standards.
 
@@ -44,17 +44,19 @@ As Co-Founder, Yaseen oversees all aspects of construction and development, from
     },
     { 
       name: 'Rajeev Viswanathan', 
-      position: 'CFO | Finance & Operations', 
+      position: 'Managing Partner,\nChief Financial Officer (Finance & Operations)', 
       image: '/images/team/rajeev.webp',
-      bio: `Rajeev Viswanathan brings over 20 years of experience in corporate finance and operations to M5V. His strategic financial leadership has been instrumental in driving growth and operational excellence across multiple industries.
-
-As CFO, Rajeev oversees financial planning, risk management, and operational strategy. His expertise in financial analysis and strategic planning helps ensure M5V's continued success and sustainable growth.`,
+      bio: `At M5V, Rajeev leads the firm’s capital strategy and financial operations, supporting the continued growth and expansion of the platform.
+      
+      Rajeev brings over two decades of experience in capital markets, real estate, and strategic finance. Most recently, he served as Managing Partner & CFO at Forum Asset Management. Prior to Forum, he was the CFO of Dream Global REIT, a $6 billion Western European office platform dual-listed on the TSX and Frankfurt Stock Exchange, which was acquired by Blackstone in 2019. Before that, he spent nearly a decade at Brookfield in various senior finance roles. Rajeev also serves on the board of the Greater Toronto Airports Authority.
+      
+      Rajeev is a CA, CPA, CFA charter holder and holds the ICD.D designation.`,
       slug: 'rajeev-viswanathan',
       linkedinId: 'rajeev-viswanathan'
     },
     { 
       name: 'Linda Ford', 
-      position: 'Director, Entitlements', 
+      position: 'Director,\nEntitlements', 
       image: '/images/team/linda.webp',
       bio: `Linda Ford specializes in navigating complex entitlement processes and regulatory compliance. With over 15 years of experience in land use planning and development approvals, she ensures our projects meet all regulatory requirements while maximizing their potential.
 
@@ -64,7 +66,7 @@ As Director of Entitlement, Linda works closely with municipalities and stakehol
     },
     { 
       name: 'Sophia Bailey', 
-      position: 'Director, Sales', 
+      position: 'Director,\nSales', 
       image: '/images/team/sophie.webp',
       bio: `Sophia Bailey is a dynamic sales leader with a proven track record of building strong client relationships and driving revenue growth. Her customer-centric approach and market expertise have been key to M5V's sales success.
 
@@ -74,7 +76,7 @@ As Director of Sales, Sophia leads our sales team, implementing innovative strat
     },
     { 
       name: 'Leo Thomas', 
-      position: 'VP, Construction', 
+      position: 'VP,\nConstruction', 
       image: '/images/team/leo.webp',
       bio: `Leo Thomas is a seasoned VP of Construction with over 22 years of experience leading multi-million dollar commercial, industrial, and residential projects. His extensive background spans Western Canada and international markets, including the U.K., Middle East, and South America. Leo has a proven track record of successfully managing large teams, including senior project managers and 60+ on-site staff, while overseeing $200M+ in annual projects.
 
@@ -86,7 +88,7 @@ Committed to operational excellence, Leo has implemented lean management program
     },
     { 
       name: 'Reza Farahdel', 
-      position: 'Controller', 
+      position: '\nController', 
       image: '/images/team/reza-edit1.webp',
       bio: `Reza Farahdel is a Certified Public Accountant with extensive experience in financial management and reporting. His expertise in accounting principles and financial analysis helps ensure M5V's financial operations run smoothly and efficiently.
 
@@ -96,7 +98,7 @@ As Controller, Reza manages all aspects of financial reporting, budgeting, and i
     },
     { 
       name: 'Yogesh Karia', 
-      position: 'Project Manager', 
+      position: '\nProject Manager', 
       image: '/images/team/yogesh.webp',
       bio: `Yogesh Karia is a highly accomplished Project Manager with over 40 years of experience leading multi-million dollar residential, commercial, hospitality, and industrial projects across Canada and internationally. He's known for flawlessly guiding projects from pre-construction to occupancy, consistently ensuring timely delivery and budget adherence.
 
@@ -106,7 +108,7 @@ Yogesh brings hands-on expertise in advanced construction methods like ICF walls
     },
     { 
       name: 'Martina Cabrera', 
-      position: 'Director, Marketing', 
+      position: 'Director,\nMarketing', 
       image: '/images/team/martina.webp',
       bio: `Martina Cabrera is a dynamic Marketing Manager with over 12 years of experience in social media and digital marketing. What began as a creative curiosity has blossomed into a profound passion for building vibrant communities, crafting effective strategies, and driving impactful results that enable brands to truly shine in the digital landscape.
 
@@ -116,7 +118,7 @@ Martina consistently helps brands achieve millions of impressions and significan
     },
     { 
       name: 'Stephen Lawrence', 
-      position: 'Site Supervisor (Niagara)', 
+      position: 'Site Supervisor \n(Niagara)', 
       image: '/images/team/stephen-lawrence2.webp',
       bio: `Stephen Lawrence is a highly skilled Construction Manager and a Licensed Professional Engineer (PEO), holding a Bachelor's in Mechanical Engineering from McMaster University. He comes equipped with a robust set of certifications, including Project Management, Working at Heights, Asbestos Abatement (Class 1 & 2), and comprehensive quality systems (IATF 16949 & ISO 9001). This extensive accreditation ensures his unwavering commitment to regulatory compliance and leadership in both safety and quality standards across all projects.
 
@@ -126,7 +128,7 @@ As an experienced Senior Site Supervisor and General Manager, Stephen brings inv
     },
     { 
       name: 'Nami Sugimoto', 
-      position: 'Operations Manager', 
+      position: '\n Operations Manager', 
       image: '/images/team/nami.webp',
       bio: `
       
@@ -136,7 +138,7 @@ As an experienced Senior Site Supervisor and General Manager, Stephen brings inv
     },
     { 
       name: 'Cynthia Yvonne', 
-      position: 'Communications & Client Relations', 
+      position: '\n Communications & Client Relations', 
       image: '/images/team/cynthia.webp',
       bio: `Boasting a EdD in Education and over 40 years in academia, Cynthia's background as a media personality, author, and principal uniquely positions her to excel in communications and client relations. Her multi-disciplinary expertise ensures impactful messaging and exceptional support.`,
       slug: 'cynthia-yvonne',
@@ -144,7 +146,7 @@ As an experienced Senior Site Supervisor and General Manager, Stephen brings inv
     },
     { 
       name: 'Rodrigo Burgos', 
-      position: 'Construction Estimator', 
+      position: '\n Construction Estimator', 
       image: '/images/team/rodrigo.webp',
       bio: `Rodrigo Burgos is a highly experienced Construction Estimator with over 20 years of expertise in Quantity Surveying for ICI (Industrial, Commercial, Institutional) and Residential projects. His comprehensive background includes detailed estimation for structural, architectural, mechanical, and civil works, ensuring thorough and accurate project cost analysis.
 
@@ -154,7 +156,7 @@ Rodrigo is a distinguished member of the Canadian Institute of Quantity Surveyor
     },
     { 
       name: 'Davian Brooks', 
-      position: 'Analyst', 
+      position: '\n Analyst', 
       image: '/images/team/davian.webp',
       bio: ``,
       slug: 'davian-brooks',
@@ -162,7 +164,7 @@ Rodrigo is a distinguished member of the Canadian Institute of Quantity Surveyor
     },
     { 
       name: 'Naijah Paul', 
-      position: 'Administrative Executive', 
+      position: '\n Administrative Executive', 
       image: '/images/team/naijah.webp',
       bio: ``,
       slug: 'naijah-paul',
@@ -170,7 +172,7 @@ Rodrigo is a distinguished member of the Canadian Institute of Quantity Surveyor
     },
     { 
       name: 'Alex Tran', 
-      position: 'Editor', 
+      position: '\n Editor', 
       image: '/images/team/alex.webp',
       bio: `Alex Tran brings a strong foundation in financial reporting, audit, and operations, cultivated through his roles at the Ontario Public Service, the CRA, and Fidelity Investments. Throughout his career, Alex has developed a keen ability to dig into data, identify patterns, and empower teams to make informed, strategic decisions.
 
@@ -180,7 +182,7 @@ Currently on the path to earning his CPA designation, Alex is driven by the oppo
     },
     { 
       name: 'Pritica Kher', 
-      position: 'Office Correspondent', 
+      position: '\n Office Correspondent', 
       image: '/images/team/pritica-edit.webp',
       bio: ` `,
       slug: 'pritica-kher',
@@ -238,7 +240,7 @@ Currently on the path to earning his CPA designation, Alex is driven by the oppo
                   )}
                   <div className="absolute bottom-0 right-0 w-full bg-black bg-opacity-50 p-6 text-right">
                     <h3 className="text-white text-2xl font-medium">{member.name}</h3>
-                    <p className="text-white text-lg">{member.position}</p>
+                    <p className="text-white text-sm whitespace-pre-line">{member.position}</p>
                   </div>
                 </div>
               </button>

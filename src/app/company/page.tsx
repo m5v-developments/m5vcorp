@@ -193,19 +193,19 @@ export default function CompanyPage(): JSX.Element {
               {
                 firstName: 'Sherard',
                 lastName: 'McQueen',
-                position: 'Sales & Marketing',
+                position: 'Chief Visionary Officer (Entitlement Sales & Marketing)',
                 image: '/images/team/sherard-2.webp'
               },
               {
                 firstName: 'Yaseen',
                 lastName: 'Nimjee',
-                position: 'Construction & Development',
+                position: 'Chief Operating Officer (Construction & Development)',
                 image: '/images/team/yaseen.webp'
               },
               {
                 firstName: 'Rajeev',
                 lastName: 'Viswanathan',
-                position: 'Finance & Operations',
+                position: 'Chief Financial Officer (Finance & Operations)',
                 image: '/images/team/rajeev.webp'
               }
             ].map((member, index) => (
@@ -230,7 +230,10 @@ export default function CompanyPage(): JSX.Element {
                     <p className="text-2xl font-medium mb-3 uppercase">
                       {member.lastName}
                     </p>
-                    <p className="text-off-white">
+                    <p className="text-off-white text-sm mb-2">
+                      Managing Partner
+                    </p>
+                    <p className="text-off-white text-sm mb-2">
                       {member.position}
                     </p>
                   </div>

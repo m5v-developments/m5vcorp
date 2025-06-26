@@ -12,10 +12,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "M5V Corp",
-  description: "M5V Corp - Real Estate Investment & Development",
-  keywords: "Real Estate, Investment, Development, M5V Corp, Property",
-  authors: [{ name: "M5V Corp" }],
+  title: "M5V Developments",
+  description: "Discover M5V Developments, Ontario’s leading innovator in community-centric real estate. With over $3B in residential projects and a vibrant pipeline, we build modern, affordable homes in Ontario’s thriving secondary markets. Join us in shaping tomorrow’s communities today.",
+  keywords: "Real Estate, Investment, Development, M5V, Property, Ontario, Niagara",
+  authors: [{ name: "M5V Developments" }],
   robots: "index, follow",
   icons: {
     icon: [

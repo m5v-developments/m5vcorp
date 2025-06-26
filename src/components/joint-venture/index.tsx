@@ -17,7 +17,7 @@ const JointVenture = () => {
           </h2>
           
           <p className="text-body text-off-white/80 mb-8">
-            A curated Niagara Falls townhome community, designed for modern living and lasting value.
+            Lake Houses designed for effortless ownership and income, just 90 minutes from Toronto.
           </p>
 
           <button className="border border-off-white text-off-white hover:bg-accent-blue hover:border-accent-blue px-6 py-2 transition-colors">

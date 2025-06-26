@@ -1,4 +1,12 @@
+'use client';
+
+import Image from 'next/image';
+import { useState, useEffect, useRef } from 'react';
+
 const PlatformCards = () => {
+  const [visibleCards, setVisibleCards] = useState<Set<number>>(new Set());
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+
   const platforms = [
     {
       title: 'Freehold & Stacked Townhomes',
@@ -22,6 +30,36 @@ const PlatformCards = () => {
     }
   ];
 
+  // Intersection Observer for lazy loading cards
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const index = cardRefs.current.findIndex(ref => ref === entry.target);
+          if (entry.isIntersecting && index !== -1) {
+            setVisibleCards(prev => new Set([...Array.from(prev), index]));
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '50px',
+      }
+    );
+
+    cardRefs.current.forEach((ref) => {
+      if (ref) {
+        observer.observe(ref);
+      }
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  // Blur placeholder data URL for progressive loading
+  const blurDataURL = 'data:image/webp;base64,UklGRiIAAABXRUJQVlA4ICwAAACwAgCdASoCAAIALmk0mk0iIiIiIgBoSywA';
+
   return (
     <section className="bg-off-white py-24 px-4 md:px-8">
       <div className="container mx-auto">
@@ -37,16 +75,37 @@ const PlatformCards = () => {
           {platforms.map((platform, index) => (
             <div 
               key={index}
-              className="group relative bg-white"
+              ref={(el) => {
+                cardRefs.current[index] = el;
+              }}
+              className="group relative bg-white transition-all duration-700 transform"
+              style={{
+                opacity: visibleCards.has(index) ? 1 : 0,
+                transform: visibleCards.has(index) ? 'translateY(0)' : 'translateY(20px)',
+              }}
             >
-              {/* Image */}
+              {/* Image Container */}
               <div className="h-64 relative overflow-hidden">
-                <div 
-                  className="absolute inset-0 bg-cover bg-center"
-                  style={{ backgroundImage: `url(${platform.image})` }}
-                />
+                {/* Fallback background color */}
+                <div className="absolute inset-0 bg-gray-200" />
+                
+                {/* Lazy loaded image */}
+                {visibleCards.has(index) && (
+                  <Image
+                    src={platform.image}
+                    alt={platform.title}
+                    fill
+                    className="object-cover transition-opacity duration-700"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    placeholder="blur"
+                    blurDataURL={blurDataURL}
+                    quality={85}
+                  />
+                )}
+                
                 {/* Blue top border */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-accent-blue" />
+                <div className="absolute top-0 left-0 right-0 h-1 bg-accent-blue z-10" />
               </div>
 
               {/* Content */}

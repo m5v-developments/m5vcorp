@@ -257,7 +257,7 @@ export const projects: Project[] = [
     name: "WESTMOUNT",
     slug: "westmount",
     assetClass: "Residential",
-    subType: "Multi-Family Condominium",
+    subType: "Stacked Towns",
     description: "Westmount Residences is a boutique community of 114 modern stacked townhomes across six low-rise buildings, each featuring private walk-out patios, landscaped courtyards, and convenient bike and parking provisions.",
     stats: [
       { label: "Location", value: "Orillia, ON" },
@@ -266,7 +266,7 @@ export const projects: Project[] = [
       { label: "Exit Strategy", value: "Sale" },
       { label: "Status", value: "Planning" },
       { label: "Asset Class", value: "Residential" },
-      { label: "Sub Type", value: "Multi-Family Condominium" }
+      { label: "Sub Type", value: "Stacked Towns" }
     ],
     longDescription: "Westmount Residences redefines medium-density living in Orillia with 114 thoughtfully designed stacked townhomes grouped into six two-storey clusters around tranquil courtyard and sunken-patio spaces. Each home opens onto a private outdoor patio and benefits from surface parking, bike racks, and mail and parcel hubs. Generous green buffers and shared amenity zones foster neighborly connections, while wide sidewalks and a dedicated fire-route drive aisle ensure easy circulation. Positioned between John and Mary Streets, moments from downtown shops, waterfront trails, and local parks, Westmount Residences blends community, comfort, and active living in the heart of Orillia.",
     images: {

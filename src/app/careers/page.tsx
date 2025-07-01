@@ -181,12 +181,12 @@ export default function CareersPage() {
 
 // --- ValuesCarousel Component ---
 const valuesData = [
-  { icon: <FaUsers className="text-accent-blue text-3xl mb-2" />, title: 'Collaborate', desc: 'Bring your strengths but lean on others. We win by working together, not alone.' },
-  { icon: <FaBolt className="text-accent-blue text-3xl mb-2" />, title: 'GSD', desc: 'Move fast with intention. Done and delivered beats delayed and perfect.' },
-  { icon: <FaFistRaised className="text-accent-blue text-3xl mb-2" />, title: 'Gritty', desc: "Stay the course, even when it’s tough. We finish what we start." },
-  { icon: <FaBalanceScale className="text-accent-blue text-3xl mb-2" />, title: 'Ethical', desc: "Do the right thing, especially when no one’s watching." },
-  { icon: <FaUserCheck className="text-accent-blue text-3xl mb-2" />, title: 'Accountable', desc: "Own your contributions from start to finish. We stand behind our work and grow from every experience." },
-  { icon: <FaHandshake className="text-accent-blue text-3xl mb-2" />, title: 'Win-Win', desc: 'Lead with “How can I help?” and build relationships that benefit everyone involved.' },
+  { icon: <FaUsers className="text-accent-blue text-3xl mb-2" />, title: 'Collaborate', desc: 'Share expertise to deliver.' },
+  { icon: <FaBolt className="text-accent-blue text-3xl mb-2" />, title: 'GSD', desc: 'Execute objectives with urgency.' },
+  { icon: <FaFistRaised className="text-accent-blue text-3xl mb-2" />, title: 'Gritty', desc: "Persist with determination." },
+  { icon: <FaBalanceScale className="text-accent-blue text-3xl mb-2" />, title: 'Ethical', desc: "Do the right thing, even when it's hard." },
+  { icon: <FaUserCheck className="text-accent-blue text-3xl mb-2" />, title: 'Accountable', desc: "Own your actions and commitments." },
+  { icon: <FaHandshake className="text-accent-blue text-3xl mb-2" />, title: 'Win-Win', desc: 'Build mutually beneficial relationships.' },
 ]
 
 function ValuesCarousel() {

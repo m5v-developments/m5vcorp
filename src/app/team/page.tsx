@@ -182,7 +182,7 @@ Currently on the path to earning his CPA designation, Alex is driven by the oppo
     },
     { 
       name: 'Pritica Kher', 
-      position: '\n Office Correspondent', 
+      position: '\n Project Manager', 
       image: '/images/team/pritica-edit.webp',
       bio: ` `,
       slug: 'pritica-kher',

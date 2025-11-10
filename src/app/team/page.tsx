@@ -163,14 +163,6 @@ Rodrigo is a distinguished member of the Canadian Institute of Quantity Surveyor
       linkedinId: 'davianbrooks'
     },
     { 
-      name: 'Naijah Paul', 
-      position: '\n Administrative Executive', 
-      image: '/images/team/naijah.webp',
-      bio: ``,
-      slug: 'naijah-paul',
-      linkedinId: ''
-    },
-    { 
       name: 'Alex Tran', 
       position: '\n Editor', 
       image: '/images/team/alex.webp',

@@ -117,16 +117,6 @@ Martina consistently helps brands achieve millions of impressions and significan
       linkedinId: 'immartinacabrera'
     },
     { 
-      name: 'Stephen Lawrence', 
-      position: 'Site Supervisor \n(Niagara)', 
-      image: '/images/team/stephen-lawrence2.webp',
-      bio: `Stephen Lawrence is a highly skilled Construction Manager and a Licensed Professional Engineer (PEO), holding a Bachelor's in Mechanical Engineering from McMaster University. He comes equipped with a robust set of certifications, including Project Management, Working at Heights, Asbestos Abatement (Class 1 & 2), and comprehensive quality systems (IATF 16949 & ISO 9001). This extensive accreditation ensures his unwavering commitment to regulatory compliance and leadership in both safety and quality standards across all projects.
-
-As an experienced Senior Site Supervisor and General Manager, Stephen brings invaluable hands-on experience managing a diverse range of private, commercial, and municipal construction projects. He excels in all facets of site-level project management, from meticulous scheduling and comprehensive crew training to consistently ensuring on-time project completion. Stephen also serves as the crucial primary liaison, fostering strong relationships with clients, architects, and all key stakeholders.`,
-      slug: 'stephen-lawrence',
-      linkedinId: ''
-    },
-    { 
       name: 'Nami Sugimoto', 
       position: '\n Operations Manager', 
       image: '/images/team/nami.webp',

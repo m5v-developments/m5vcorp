@@ -65,16 +65,6 @@ As Director of Entitlement, Linda works closely with municipalities and stakehol
       linkedinId: 'lindamford'
     },
     { 
-      name: 'Sophia Bailey', 
-      position: 'Director,\nSales', 
-      image: '/images/team/sophie.webp',
-      bio: `Sophia Bailey is a dynamic sales leader with a proven track record of building strong client relationships and driving revenue growth. Her customer-centric approach and market expertise have been key to M5V's sales success.
-
-As Director of Sales, Sophia leads our sales team, implementing innovative strategies to connect with potential buyers and create exceptional customer experiences throughout the purchasing process.`,
-      slug: 'sophia-bailey',
-      linkedinId: ''
-    },
-    { 
       name: 'Leo Thomas', 
       position: 'VP,\nConstruction', 
       image: '/images/team/leo.webp',

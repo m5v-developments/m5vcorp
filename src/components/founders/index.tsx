@@ -1,40 +1,55 @@
 import Link from 'next/link';
+import { getAllTeamMembers } from '@/lib/team';
 
-const Founders = () => {
-  const founders = [
-    {
-      firstName: 'Sherard',
-      lastName: 'McQueen',
-      position: 'Chief Visionary Officer (Entitlement Sales & Marketing)',
-      image: '/images/team/sherard-2.webp',
-      id: 'sherard'
-    },
-    {
-      firstName: 'Yaseen',
-      lastName: 'Nimjee',
-      position: 'Chief Operating Officer (Construction & Development)',
-      image: '/images/team/yaseen.webp',
-      id: 'yaseen'
-    },
-    {
-      firstName: 'Rajeev',
-      lastName: 'Viswanathan',
-      position: 'Chief Financial Officer (Capital Strategy)',
-      image: '/images/team/rajeev.webp',
-      id: 'rajeev'
-    }
-  ];
+export default async function Founders() {
+  const allMembers = await getAllTeamMembers();
+  const founderMembers = allMembers.filter((m) => m.isFounder);
+
+  const founders = founderMembers.length > 0
+    ? founderMembers.map((m) => {
+        const nameParts = m.name.split(' ');
+        return {
+          firstName: nameParts[0],
+          lastName: nameParts.slice(1).join(' '),
+          position: m.position.replace(/^Managing Partner,?\s*/i, '').trim(),
+          image: m.image || '',
+          id: m.slug.split('-')[0],
+        };
+      })
+    : [
+        {
+          firstName: 'Sherard',
+          lastName: 'McQueen',
+          position: 'Chief Visionary Officer (Entitlement Sales & Marketing)',
+          image: '/images/team/sherard-2.webp',
+          id: 'sherard'
+        },
+        {
+          firstName: 'Yaseen',
+          lastName: 'Nimjee',
+          position: 'Chief Operating Officer (Construction & Development)',
+          image: '/images/team/yaseen.webp',
+          id: 'yaseen'
+        },
+        {
+          firstName: 'Rajeev',
+          lastName: 'Viswanathan',
+          position: 'Chief Financial Officer (Capital Strategy)',
+          image: '/images/team/rajeev.webp',
+          id: 'rajeev'
+        }
+      ];
 
   return (
     <section className="bg-accent-blue py-24 px-4 md:px-8">
       <div className="container mx-auto">
         <h2 className="text-h2 mb-8 text-off-white font-medium">Our Partners</h2>
-        
+
         {/* Founders Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {founders.map((founder, index) => (
-            <Link 
-              key={index} 
+            <Link
+              key={index}
               href={`/team?modal=${founder.id}`}
               className="block"
             >
@@ -77,6 +92,4 @@ const Founders = () => {
       </div>
     </section>
   );
-};
-
-export default Founders; 
+}

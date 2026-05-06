@@ -1,9 +1,9 @@
-import { newsItems } from '@/lib/news';
+import { getNews } from '@/lib/news';
 import Link from 'next/link';
 
-const NewsInsights = () => {
-  // Get the 3 most recent articles
-  const recentNews = newsItems
+export default async function NewsInsights() {
+  const allNews = await getNews();
+  const recentNews = allNews
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, 3);
 
@@ -21,7 +21,7 @@ const NewsInsights = () => {
         {/* News Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {recentNews.map((item) => (
-            <Link 
+            <Link
               key={item.id}
               href={`/news/${item.id}`}
               className="group cursor-pointer block"
@@ -62,6 +62,4 @@ const NewsInsights = () => {
       </div>
     </section>
   );
-};
-
-export default NewsInsights; 
+}

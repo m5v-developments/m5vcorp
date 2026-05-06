@@ -1,36 +1,36 @@
 import { NewsItem } from '@/types/news';
+import { getArticles, getArticleBySlug } from '@/sanity/queries';
 
-// TODO: Replace with GROQ fetch once Sanity is wired
-export const newsItems: NewsItem[] = [
+const fallbackItems: NewsItem[] = [
   {
     id: 'rajeev-joins',
     headline: 'Rajeev Viswanathan Joins M5V Developments as CFO',
     date: '2025-06-28',
     author: 'M5V Developments',
-    preview: 'With over 20 years of capital markets and real estate experience, Rajeev will lead M5V’s capital strategy as the firm accelerates its $500M+ development pipeline and welcomes new investment partners.',
-    body: `M5V Developments (“M5V”) is pleased to announce that Rajeev Viswanathan (CPA, CA, CFA, ICD.D) has joined the firm as Managing Partner, Chief Financial Officer (Capital Strategy).
+    preview: 'With over 20 years of capital markets and real estate experience, Rajeev will lead M5V's capital strategy as the firm accelerates its $500M+ development pipeline and welcomes new investment partners.',
+    body: `M5V Developments ("M5V") is pleased to announce that Rajeev Viswanathan (CPA, CA, CFA, ICD.D) has joined the firm as Managing Partner, Chief Financial Officer (Capital Strategy).
 
- 
+
 
 Rajeev brings over two decades of experience in capital markets, real estate, and strategic finance. Most recently, he served as Managing Partner & CFO at Forum Asset Management. Prior to Forum, he was the CFO of Dream Global REIT, a $6 billion Western European office platform dual-listed on the TSX and Frankfurt Stock Exchange, which was acquired by Blackstone in 2019. Before that, he spent nearly a decade at Brookfield in various senior finance roles. Rajeev also serves on the board of the Greater Toronto Airports Authority.
 
- 
 
-At M5V, Rajeev will lead the firm’s capital strategy and financial operations, supporting the continued growth and expansion of the platform.
 
- 
+At M5V, Rajeev will lead the firm's capital strategy and financial operations, supporting the continued growth and expansion of the platform.
 
-“Rajeev is a trusted partner with unmatched depth in finance, capital strategy, and global real estate,” said Yaseen Nimjee, Managing Partner, Chief Operating Officer (Construction & Development) at M5V Developments. “His leadership will be instrumental as we build the depth and breadth of our capital sources to scale the business.”
 
- 
 
-“We’ve worked with Rajeev for over two decades and couldn’t be more excited to formally welcome him as a partner,” added Sherard McQueen, Managing Partner, Chief Visionary Officer (Entitlements, Sales & Marketing) at M5V Developments. “His experience and entrepreneurial mindset are a perfect fit as we enter this next phase of growth.”
+"Rajeev is a trusted partner with unmatched depth in finance, capital strategy, and global real estate," said Yaseen Nimjee, Managing Partner, Chief Operating Officer (Construction & Development) at M5V Developments. "His leadership will be instrumental as we build the depth and breadth of our capital sources to scale the business."
 
- 
 
-M5V Developments is currently advancing a $500+ million development pipeline of seniors’ housing and residential communities and is now launching external partnership and investment opportunities for the first time.
 
- 
+"We've worked with Rajeev for over two decades and couldn't be more excited to formally welcome him as a partner," added Sherard McQueen, Managing Partner, Chief Visionary Officer (Entitlements, Sales & Marketing) at M5V Developments. "His experience and entrepreneurial mindset are a perfect fit as we enter this next phase of growth."
+
+
+
+M5V Developments is currently advancing a $500+ million development pipeline of seniors' housing and residential communities and is now launching external partnership and investment opportunities for the first time.
+
+
 
 For inquiries, please contact:
 Rajeev Viswanathan
@@ -43,20 +43,20 @@ rajeev@m5vinc.com `,
     headline: "Sod Turning Celebrates New Seniors' Apartment at Sundial Lakeview",
     date: '2025-06-24',
     author: 'M5V Developments',
-    preview: "A ceremonial sod turning marks the start of construction on 152 new seniors' apartments—advancing M5V’s vision for a complete, connected retirement community in the heart of Orillia.",
-    body: `A ceremonial sod turning will mark the start of construction for Sundial Lakeview Residences, a new 12-storey, 152-unit seniors' apartment at 600 Sundial Drive. This development represents the second phase of the growing Sundial Lakeview Retirement & Residences community, following the successful opening of Sundial Lakeview Retirement. 
+    preview: "A ceremonial sod turning marks the start of construction on 152 new seniors' apartments—advancing M5V's vision for a complete, connected retirement community in the heart of Orillia.",
+    body: `A ceremonial sod turning will mark the start of construction for Sundial Lakeview Residences, a new 12-storey, 152-unit seniors' apartment at 600 Sundial Drive. This development represents the second phase of the growing Sundial Lakeview Retirement & Residences community, following the successful opening of Sundial Lakeview Retirement.
 
-Mayor Don Mcisaac, local councillors, and members of the community will join Yaseen Nimjee, President of M5V Developments Inc., and Sundial Lakeview Retirement and Residences to celebrate this exciting milestone in Orillia's evolving housing landscape for seniors. 
+Mayor Don Mcisaac, local councillors, and members of the community will join Yaseen Nimjee, President of M5V Developments Inc., and Sundial Lakeview Retirement and Residences to celebrate this exciting milestone in Orillia's evolving housing landscape for seniors.
 
-"This next phase brings a fresh offering to Orillia-modern, affordable, and community-focused seniors' apartments," said Nimjee. "We're proud to continue building a complete retirement community in the heart of the city." 
+"This next phase brings a fresh offering to Orillia-modern, affordable, and community-focused seniors' apartments," said Nimjee. "We're proud to continue building a complete retirement community in the heart of the city."
 
-Following the ceremony, guests are invited to enjoy a complimentary BBQ lunch hosted at Sundial Lakeview Retirement, with an opportunity to meet the development team and learn more about the vision behind this multi-phased campus. 
+Following the ceremony, guests are invited to enjoy a complimentary BBQ lunch hosted at Sundial Lakeview Retirement, with an opportunity to meet the development team and learn more about the vision behind this multi-phased campus.
 
-Quick Facts: 
-What: Sod-turning ceremony for Sundial Lakeview Residences 
-When: Thursday, July 3, 2025 at 12:00 PM 
-Where: 600 Sundial Drive, Orillia (Event entrance via Laclie Street, behind existing Sundial Retirement Residence) 
-Who: Mayor Don Mclsaac, MSV President Yaseen Nimjee, local leaders 
+Quick Facts:
+What: Sod-turning ceremony for Sundial Lakeview Residences
+When: Thursday, July 3, 2025 at 12:00 PM
+Where: 600 Sundial Drive, Orillia (Event entrance via Laclie Street, behind existing Sundial Retirement Residence)
+Who: Mayor Don Mclsaac, MSV President Yaseen Nimjee, local leaders
 Why: Celebrating the launch of a 152-unit, seniors-focused apartment residence - Phase Two of Sundial's community vision. `,
     image: '/images/m5v_portfolio/sundial-phase2/sundial-p2-render.webp',
     category: 'Press Release'
@@ -112,4 +112,24 @@ Located in the heart of Niagara Falls, the development provides residents with e
     image: '/images/news/niagara-sherard-salute-crop.jpg',
     category: 'Project Update'
   }
-]; 
+];
+
+export async function getNews(): Promise<NewsItem[]> {
+  try {
+    const sanityArticles = await getArticles()
+    if (sanityArticles && sanityArticles.length > 0) {
+      return sanityArticles
+    }
+  } catch {}
+  return fallbackItems
+}
+
+export async function getNewsBySlug(slug: string): Promise<NewsItem | undefined> {
+  try {
+    const article = await getArticleBySlug(slug)
+    if (article) return article
+  } catch {}
+  return fallbackItems.find((item) => item.id === slug)
+}
+
+export { fallbackItems as newsItems }

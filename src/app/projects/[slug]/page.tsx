@@ -1,31 +1,31 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { projects } from '@/lib/data'
+import { getAllProjects, getProjectBySlug } from '@/lib/data'
 import { notFound } from 'next/navigation'
 import AnimatedDescription from './AnimatedDescription'
 import AnimatedImage from './AnimatedImage'
 import Head from 'next/head'
 import FadeInOnView from '@/components/FadeInOnView'
 
-const BLUR_PLACEHOLDER = 'data:image/webp;base64,UklGRiIAAABXRUJQVlA4ICwAAACwAgCdASoCAAIALmk0mk0iIiIiIgBoSywA'; // generic 10x10 blur
+export const revalidate = 60;
 
-async function getProjectData(slug: string) {
-  const project = projects.find(p => p.slug === slug)
-  if (!project) {
-    notFound()
-  }
-  return project
+const BLUR_PLACEHOLDER = 'data:image/webp;base64,UklGRiIAAABXRUJQVlA4ICwAAACwAgCdASoCAAIALmk0mk0iIiIiIgBoSywA';
+
+export async function generateStaticParams() {
+  const projects = await getAllProjects()
+  return projects.map((p) => ({ slug: p.slug }))
 }
 
 export default async function ProjectPage({ params }: { params: { slug: string } }) {
-  const project = await getProjectData(params.slug)
+  const project = await getProjectBySlug(params.slug)
+  if (!project) {
+    notFound()
+  }
 
-  // Filter stats to only show the specified ones
   const allowedStats = ['Location', 'Units', 'Status', 'Asset Class', 'Sub Type'];
   const filteredStats = project.stats.filter(stat => allowedStats.includes(stat.label));
 
-  // Breadcrumbs JSON-LD
   const breadcrumbs = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -124,7 +124,7 @@ export default async function ProjectPage({ params }: { params: { slug: string }
         <AnimatedDescription description={project.longDescription} />
 
         {/* Full Width Image */}
-        <AnimatedImage 
+        <AnimatedImage
           src={project.images.banner}
           alt="Project interior"
         />
@@ -152,7 +152,7 @@ export default async function ProjectPage({ params }: { params: { slug: string }
 
         {/* Back Button */}
         <div className="text-center pb-12 mt-12">
-          <Link 
+          <Link
             href="/projects"
             className="inline-block border border-black-primary text-black-primary px-6 py-2 hover:bg-accent-blue hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-accent-blue"
             aria-label="Back to All Projects"

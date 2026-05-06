@@ -1,6 +1,25 @@
 import { Project } from '@/types/project';
+import { getProjects as fetchSanityProjects, getProjectBySlug as fetchSanityProjectBySlug } from '@/sanity/queries';
 
-export const projects: Project[] = [
+export async function getAllProjects(): Promise<Project[]> {
+  try {
+    const sanityProjects = await fetchSanityProjects()
+    if (sanityProjects && sanityProjects.length > 0) {
+      return sanityProjects
+    }
+  } catch {}
+  return fallbackProjects
+}
+
+export async function getProjectBySlug(slug: string): Promise<Project | undefined> {
+  try {
+    const project = await fetchSanityProjectBySlug(slug)
+    if (project) return project
+  } catch {}
+  return fallbackProjects.find((p) => p.slug === slug)
+}
+
+const fallbackProjects: Project[] = [
   {
     name: "LE FALLS",
     slug: "le-falls",
@@ -441,4 +460,6 @@ export const projects: Project[] = [
       ]
     }
   },
-]; 
+];
+
+export { fallbackProjects as projects };

@@ -1,13 +1,12 @@
-import { newsItems } from '@/lib/news';
+import { getNews } from '@/lib/news';
 import FeaturedNewsCard from '@/components/news/FeaturedNewsCard';
 import NewsList from '@/components/news/NewsList';
 import Image from 'next/image';
 
-// TODO: Replace with getNews() function for Sanity integration
-const getNews = () => newsItems;
+export const revalidate = 60;
 
-export default function NewsPage() {
-  const allNews = getNews();
+export default async function NewsPage() {
+  const allNews = await getNews();
   const [featured, ...others] = allNews;
 
   return (

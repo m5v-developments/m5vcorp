@@ -1,11 +1,10 @@
 import { MetadataRoute } from 'next'
-import { projects } from '@/lib/data'
-import { newsItems } from '@/lib/news'
+import { getAllProjects } from '@/lib/data'
+import { getNews } from '@/lib/news'
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://m5vinc.com' // Replace with your actual domain
-  
-  // Static pages
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const baseUrl = 'https://m5vinc.com'
+
   const staticPages = [
     {
       url: baseUrl,
@@ -51,7 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  // Dynamic project pages
+  const projects = await getAllProjects()
   const projectPages = projects.map((project) => ({
     url: `${baseUrl}/projects/${project.slug}`,
     lastModified: new Date(),
@@ -59,7 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  // Dynamic news pages
+  const newsItems = await getNews()
   const newsPages = newsItems.map((news) => ({
     url: `${baseUrl}/news/${news.id}`,
     lastModified: new Date(news.date),
@@ -68,4 +67,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }))
 
   return [...staticPages, ...projectPages, ...newsPages]
-} 
+}

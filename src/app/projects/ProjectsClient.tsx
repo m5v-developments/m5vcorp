@@ -20,7 +20,7 @@ export default function ProjectsClient({ projects }: { projects: Project[] }) {
 
   const CITY_OPTIONS = useMemo(() =>
     Array.from(new Set(projects.map(p => {
-      const locationStat = p.stats.find(stat => stat.label === "Location");
+      const locationStat = (p.stats || []).find(stat => stat.label === "Location");
       return locationStat ? locationStat.value.split(',')[0].trim() : '';
     }))),
     [projects]
@@ -28,15 +28,16 @@ export default function ProjectsClient({ projects }: { projects: Project[] }) {
 
   const filteredProjects = useMemo(() => {
     return projects.filter(p => {
+      const stats = p.stats || [];
       const matchesSearch =
         p.name.toLowerCase().includes(search.toLowerCase()) ||
-        p.description.toLowerCase().includes(search.toLowerCase());
+        (p.description || '').toLowerCase().includes(search.toLowerCase());
 
-      const locationStat = p.stats.find(stat => stat.label === "Location");
+      const locationStat = stats.find(stat => stat.label === "Location");
       const city = locationStat ? locationStat.value.split(',')[0].trim() : '';
       const matchesLocation = !locations.length || locations.includes(city);
 
-      const statusStat = p.stats.find(stat => stat.label === "Status");
+      const statusStat = stats.find(stat => stat.label === "Status");
       const status = statusStat ? statusStat.value : '';
       const matchesStatus = !statuses.length || statuses.includes(status);
 
@@ -89,11 +90,12 @@ export default function ProjectsClient({ projects }: { projects: Project[] }) {
       {/* --- Projects List --- */}
       <div className="max-w-6xl mx-auto px-4 md:px-8 py-12 space-y-12">
         {filteredProjects.map((project) => {
-          const statusStat = project.stats.find(stat => stat.label === "Status");
+          const stats = project.stats || [];
+          const statusStat = stats.find(stat => stat.label === "Status");
           const status = statusStat ? statusStat.value : '';
-          const locationStat = project.stats.find(stat => stat.label === "Location");
+          const locationStat = stats.find(stat => stat.label === "Location");
           const location = locationStat ? locationStat.value : '';
-          const exitStrategyStat = project.stats.find(stat => stat.label === "Exit Strategy");
+          const exitStrategyStat = stats.find(stat => stat.label === "Exit Strategy");
           const exitStrategy = exitStrategyStat ? exitStrategyStat.value : '';
 
           return (

@@ -24,7 +24,7 @@ export default async function ProjectPage({ params }: { params: { slug: string }
   }
 
   const allowedStats = ['Location', 'Units', 'Status', 'Asset Class', 'Sub Type'];
-  const filteredStats = project.stats.filter(stat => allowedStats.includes(stat.label));
+  const filteredStats = (project.stats || []).filter(stat => allowedStats.includes(stat.label));
 
   const breadcrumbs = {
     "@context": "https://schema.org",

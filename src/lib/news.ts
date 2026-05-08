@@ -7,7 +7,7 @@ const fallbackItems: NewsItem[] = [
     headline: 'Rajeev Viswanathan Joins M5V Developments as CFO',
     date: '2025-06-28',
     author: 'M5V Developments',
-    preview: 'With over 20 years of capital markets and real estate experience, Rajeev will lead M5V's capital strategy as the firm accelerates its $500M+ development pipeline and welcomes new investment partners.',
+    preview: 'With over 20 years of capital markets and real estate experience, Rajeev will lead M5V\'s capital strategy as the firm accelerates its $500M+ development pipeline and welcomes new investment partners.',
     body: `M5V Developments ("M5V") is pleased to announce that Rajeev Viswanathan (CPA, CA, CFA, ICD.D) has joined the firm as Managing Partner, Chief Financial Officer (Capital Strategy).
 
 

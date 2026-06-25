@@ -108,8 +108,8 @@ export const projects: Project[] = [
       { label: "Beds", value: "200" },
       { label: "Exit Strategy", value: "Operating" },
       { label: "Status", value: "Completed" },
-      { label: "Asset Class", value: "Senior Living" },
-      { label: "Sub Type", value: "Retirement Home" }
+      { label: "Asset Class", value: "Commercial" },
+      { label: "Sub Type", value: "Senior Living Suites" }
     ],
     longDescription: "Perched above Lake Couchiching, Sundial Lakeview Retirement Residence offers resort-style, worry-free living in a newly built community of just 100 suites. Bright one- and two-bedroom layouts provide private outdoor spaces and modern tech. Residents enjoy three daily home-cooked meals, comprehensive amenities like housekeeping and a vibrant social calendar, plus dedicated safety systems, ensuring every day revolves around lakeside tranquility and community.",
     images: {
@@ -294,8 +294,8 @@ export const projects: Project[] = [
       { label: "Beds", value: "200" },
       { label: "Exit Strategy", value: "Sale" },
       { label: "Status", value: "Construction" },
-      { label: "Asset Class", value: "Residential" },
-      { label: "Sub Type", value: "Multi-Family Condominium" }
+      { label: "Asset Class", value: "Commercial" },
+      { label: "Sub Type", value: "Senior Living Suites" }
     ],
     longDescription: "Rising 12 storeys above Lake Couchiching, Sundial Phase 2 unveils 150 light-filled homes, enriching the Sundial campus with elevated living. From private balconies that perfectly frame sunrise views over the water, to curated on-site amenities—including a dedicated business centre, state-of-the-art fitness studio, and versatile activity room for gatherings—every detail is meticulously crafted for balanced living. Residents here explore winding waterfront trails, relax in breezy picnic groves, and immerse themselves in lakeside life, with accessible downtown Orillia amenities just moments away. Here, lakeside tranquility meets everyday convenience, fostering a supportive community where comfort and engagement flourish.",
     images: {
@@ -322,8 +322,8 @@ export const projects: Project[] = [
       { label: "Beds", value: "200" },
       { label: "Exit Strategy", value: "Sale" },
       { label: "Status", value: "Planning" },
-      { label: "Asset Class", value: "Residential" },
-      { label: "Sub Type", value: "Senior Apartments" }
+      { label: "Asset Class", value: "Commercial" },
+      { label: "Sub Type", value: "Senior Living Suites" }
     ],
     longDescription: "Sundial Residences Phase 3 is a 2-acre development envisioned as a mid-rise apartment complex focused on active senior renters.  This next phase is positioned to deliver over 100 thoughtfully designed rental units with integrated amenity and green spaces. Site plan approvals are in place, and the project is anticipated to launch construction in 2027..",
     images: {
@@ -351,8 +351,8 @@ export const projects: Project[] = [
       { label: "Beds", value: "200" },
       { label: "Exit Strategy", value: "Sale" },
       { label: "Status", value: "Planning" },
-      { label: "Asset Class", value: "Residential" },
-      { label: "Sub Type", value: "Multi-Family Condominium" }
+      { label: "Asset Class", value: "Commercial" },
+      { label: "Sub Type", value: "Senior Living Suites" }
     ],
     longDescription: "Phase 4 builds on the success of earlier phases, offering a condominium format tailored for aging-in-place. Situated on 2 acres adjacent to Phases 2 and 3, this multifamily project will emphasize flexible suite layouts, elevator access, and indoor–outdoor gathering spaces. Phase 4 represents M5V’s deepening commitment to long-term community creation in Orillia.",
     images: {
@@ -376,8 +376,8 @@ export const projects: Project[] = [
       { label: "Beds", value: "200" },
       { label: "Exit Strategy", value: "Sale" },
       { label: "Status", value: "Planning" },
-      { label: "Asset Class", value: "Residential" },
-      { label: "Sub Type", value: "Memory Care" }
+      { label: "Asset Class", value: "Commercial" },
+      { label: "Sub Type", value: "Assisted Living & Memory Care" }
     ],
     longDescription: "Phase 5 is planned as a specialized 1-acre development designed to provide safe, comfortable, and dignified care for seniors requiring memory support or daily assistance. This facility will prioritize accessibility, medical readiness, and sensory-informed design. This phase will round out the full continuum of care envisioned at Sundial—from independent living to supportive housing—anchoring the district as a benchmark for aging-in-place innovation in Ontario’s secondary markets.",
     images: {

@@ -99,8 +99,8 @@ export const projects: Project[] = [
   {
     name: "SUNDIAL LAKEVIEW RETIREMENT RESIDENCE",
     slug: "sundial-retirement",
-    assetClass: "Senior Living",
-    subType: "Retirement Home",
+    assetClass: "Commercial",
+    subType: "Senior Living Suites",
     description: "Lake-view retirement living in Orillia: 100 modern one- and two-bedroom suites with walk-out patios, chef-prepared meals, and 24/7 care on Lake Couchiching.",
     stats: [
       { label: "Location", value: "Orillia, ON" },
@@ -285,8 +285,8 @@ export const projects: Project[] = [
   {
     name: "SUNDIAL LAKEVIEW PHASE 2",
     slug: "sundial-phase-2",
-    assetClass: "Residential",
-    subType: "Multi-Family Condominium",
+    assetClass: "Commercial",
+    subType: "Senior Living Suites",
     description: "Sundial Phase 2 adds on a refined collection of 150 modern one- and two-bedroom homes—each extending to a private balcony creating a truly balanced lifestyle within a 12-storey building.",
     stats: [
       { label: "Location", value: "Orillia, ON" },
@@ -313,8 +313,8 @@ export const projects: Project[] = [
   {
     name: "SUNDIAL LAKEVIEW PHASE 3",
     slug: "sundial-phase-3",
-    assetClass: "Residential",
-    subType: "Senior Apartments",
+    assetClass: "Commercial",
+    subType: "Senior Living Suites",
     description: "A modern rental apartment community designed for independent senior living. Located in the heart of Orillia’s Sundial Campus, Phase 3 continues the evolution of a vibrant, age-forward neighbourhood.",
     stats: [
       { label: "Location", value: "Orillia, ON" },
@@ -342,8 +342,8 @@ export const projects: Project[] = [
   {
     name: "SUNDIAL LAKEVIEW PHASE 4",
     slug: "sundial-phase-4",
-    assetClass: "Residential",
-    subType: "Multi-Family Condominium",
+    assetClass: "Commercial",
+    subType: "Senior Living Suites",
     description: "An upcoming condominium phase offering attainable ownership for seniors and empty-nesters seeking community, lifestyle, and connection—all within the growing Sundial District.",
     stats: [
       { label: "Location", value: "Orillia, ON" },
@@ -367,8 +367,8 @@ export const projects: Project[] = [
   {
     name: "SUNDIAL LAKEVIEW PHASE 5",
     slug: "sundial-phase-5",
-    assetClass: "Residential",
-    subType: "Memory Care",
+    assetClass: "Commercial",
+    subType: "Assisted Living & Memory Care",
     description: "A future-forward memory care and assisted living residence, Phase 5 will complete the Sundial Campus with dedicated support services in a purpose-built setting.",
     stats: [
       { label: "Location", value: "Orillia, ON" },

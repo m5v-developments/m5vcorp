@@ -1,28 +1,11 @@
 'use client'
 import React, { useState, useEffect } from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
-import { FaLightbulb, FaUsers, FaShieldAlt, FaStar, FaChartLine, FaLeaf, FaHandshake, FaCheckCircle, FaBolt, FaBalanceScale, FaUserCheck, FaFistRaised } from 'react-icons/fa'
-
-const values = [
-  { title: 'Innovation', body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
-  { title: 'Community',  body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
-  { title: 'Integrity',  body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
-  { title: 'Excellence', body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
-  { title: 'Growth',     body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
-]
+import { FaUsers, FaHandshake, FaBolt, FaBalanceScale, FaUserCheck, FaFistRaised } from 'react-icons/fa'
 
 export default function CareersPage() {
-  const [active, setActive] = useState(0)
-  const [showContent, setShowContent] = useState(0)
   const [isMobile, setIsMobile] = useState(false)
   const [showAllPhotos, setShowAllPhotos] = useState(false)
-
-  useEffect(() => {
-    setShowContent(-1)
-    const timeout = setTimeout(() => setShowContent(active), 350)
-    return () => clearTimeout(timeout)
-  }, [active])
 
   useEffect(() => {
     const checkMobile = () => {
@@ -50,9 +33,14 @@ export default function CareersPage() {
           <div>
             <p className="uppercase font-semibold tracking-widest text-sm mb-2">Careers</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-light mb-2">Join Our Team and Build the Future.</h1>
-            <Link href="https://www.linkedin.com/company/m5v-developments/jobs/" className="mt-6 inline-block border border-white text-white px-6 py-2 hover:bg-black hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-accent-blue">
+            <a
+              href="https://www.linkedin.com/company/m5v-developments/jobs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-block border border-white text-white px-6 py-2 hover:bg-black hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-accent-blue"
+            >
               View All Jobs
-            </Link>
+            </a>
           </div>
         </div>
       </div>

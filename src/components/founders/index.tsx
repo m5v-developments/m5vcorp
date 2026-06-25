@@ -7,21 +7,18 @@ const Founders = () => {
       lastName: 'McQueen',
       position: 'Chief Visionary Officer (Entitlement Sales & Marketing)',
       image: '/images/team/sherard-2.webp',
-      id: 'sherard'
     },
     {
       firstName: 'Yaseen',
       lastName: 'Nimjee',
       position: 'Chief Operating Officer (Construction & Development)',
       image: '/images/team/yaseen.webp',
-      id: 'yaseen'
     },
     {
       firstName: 'Rajeev',
       lastName: 'Viswanathan',
       position: 'Chief Financial Officer (Capital Strategy)',
       image: '/images/team/rajeev.webp',
-      id: 'rajeev'
     }
   ];
 
@@ -35,7 +32,7 @@ const Founders = () => {
           {founders.map((founder, index) => (
             <Link 
               key={index} 
-              href={`/team?modal=${founder.id}`}
+              href="/team"
               className="block"
             >
               <div className="bg-black-primary aspect-[3/4] p-0 relative group">
@@ -70,9 +67,12 @@ const Founders = () => {
 
         {/* Meet The Team Button */}
         <div className="text-center mt-12">
-          <button className="border border-off-white text-off-white bg-accent-blue hover:bg-black-primary px-6 py-2 rounded-sm transition-colors duration-300">
-            <Link href="/team?modal=">Meet The Team</Link>
-          </button>
+          <Link
+            href="/team"
+            className="inline-block border border-off-white text-off-white bg-accent-blue hover:bg-black-primary px-6 py-2 rounded-sm transition-colors duration-300"
+          >
+            Meet The Team
+          </Link>
         </div>
       </div>
     </section>

@@ -1,8 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import StickyHeader from '@/components/sticky-header';
-import Link from 'next/link';
 import { useState } from 'react';
 
 interface TeamMember {
@@ -12,10 +10,6 @@ interface TeamMember {
   bio?: string;
   slug: string;
   linkedinId?: string;
-}
-
-function slugify(name: string) {
-  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
 
 export default function TeamPage() {
@@ -78,7 +72,7 @@ Committed to operational excellence, Leo has implemented lean management program
     },
     { 
       name: 'Reza Farahdel', 
-      position: '\nController', 
+      position: 'Controller', 
       image: '/images/team/reza-edit1.webp',
       bio: `Reza Farahdel is a Certified Public Accountant with extensive experience in financial management and reporting. His expertise in accounting principles and financial analysis helps ensure M5V's financial operations run smoothly and efficiently.
 
@@ -88,7 +82,7 @@ As Controller, Reza manages all aspects of financial reporting, budgeting, and i
     },
     { 
       name: 'Yogesh Karia', 
-      position: '\nProject Manager', 
+      position: 'Project Manager', 
       image: '/images/team/yogesh.webp',
       bio: `Yogesh Karia is a highly accomplished Project Manager with over 40 years of experience leading multi-million dollar residential, commercial, hospitality, and industrial projects across Canada and internationally. He's known for flawlessly guiding projects from pre-construction to occupancy, consistently ensuring timely delivery and budget adherence.
 
@@ -108,7 +102,7 @@ Martina consistently helps brands achieve millions of impressions and significan
     },
     { 
       name: 'Nami Sugimoto', 
-      position: '\n Operations Manager', 
+      position: 'Operations Manager', 
       image: '/images/team/nami.webp',
       bio: `
       
@@ -118,7 +112,7 @@ Martina consistently helps brands achieve millions of impressions and significan
     },
     { 
       name: 'Cynthia Yvonne', 
-      position: '\n Communications & Client Relations', 
+      position: 'Communications & Client Relations', 
       image: '/images/team/cynthia.webp',
       bio: `Boasting a EdD in Education and over 40 years in academia, Cynthia's background as a media personality, author, and principal uniquely positions her to excel in communications and client relations. Her multi-disciplinary expertise ensures impactful messaging and exceptional support.`,
       slug: 'cynthia-yvonne',
@@ -126,7 +120,7 @@ Martina consistently helps brands achieve millions of impressions and significan
     },
     { 
       name: 'Rodrigo Burgos', 
-      position: '\n Construction Estimator', 
+      position: 'Construction Estimator', 
       image: '/images/team/rodrigo.webp',
       bio: `Rodrigo Burgos is a highly experienced Construction Estimator with over 20 years of expertise in Quantity Surveying for ICI (Industrial, Commercial, Institutional) and Residential projects. His comprehensive background includes detailed estimation for structural, architectural, mechanical, and civil works, ensuring thorough and accurate project cost analysis.
 
@@ -136,7 +130,7 @@ Rodrigo is a distinguished member of the Canadian Institute of Quantity Surveyor
     },
     { 
       name: 'Davian Brooks', 
-      position: '\n Analyst', 
+      position: 'Analyst', 
       image: '/images/team/davian.webp',
       bio: ``,
       slug: 'davian-brooks',
@@ -144,7 +138,7 @@ Rodrigo is a distinguished member of the Canadian Institute of Quantity Surveyor
     },
     { 
       name: 'Alex Tran', 
-      position: '\n Editor', 
+      position: 'Editor', 
       image: '/images/team/alex.webp',
       bio: `Alex Tran brings a strong foundation in financial reporting, audit, and operations, cultivated through his roles at the Ontario Public Service, the CRA, and Fidelity Investments. Throughout his career, Alex has developed a keen ability to dig into data, identify patterns, and empower teams to make informed, strategic decisions.
 
@@ -154,8 +148,8 @@ Currently on the path to earning his CPA designation, Alex is driven by the oppo
     },
     { 
       name: 'Pritica Kher', 
-      position: '\n Project Manager', 
-      image: '/images/team/pritica-edit.webp',
+      position: 'Project Manager',
+      image: '/images/team/pritica-kher.webp',
       bio: ` `,
       slug: 'pritica-kher',
       linkedinId: 'pritica-kher-5843b8315'
@@ -163,8 +157,7 @@ Currently on the path to earning his CPA designation, Alex is driven by the oppo
   ];
 
   return (
-    <main className="min-h-screen">
-      <StickyHeader />
+    <div className="min-h-screen">
       
       {/* Hero Section */}
       <div className="w-full relative pt-56 pb-24 px-4 md:px-8 text-white h-[60vh] flex items-end">
@@ -243,7 +236,7 @@ Currently on the path to earning his CPA designation, Alex is driven by the oppo
               />
             </div>
             {/* Content container */}
-            <div className="relative w-full sm:w-2/3 flex flex-col p-4 sm:p-8">
+            <div className="relative w-full sm:w-1/3 flex flex-col p-4 sm:p-8">
               <button
                 onClick={() => setSelectedMember(null)}
                 className="self-end text-2xl sm:text-3xl font-bold leading-none cursor-pointer"
@@ -302,6 +295,6 @@ Currently on the path to earning his CPA designation, Alex is driven by the oppo
           </div>
         </div>
       )}
-    </main>
+    </div>
   );
-} 
+}
